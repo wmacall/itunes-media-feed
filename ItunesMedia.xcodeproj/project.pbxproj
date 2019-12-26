@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		ECCCD11923B579BD0047F1F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD11823B579BD0047F1F6 /* AppDelegate.swift */; };
-		ECCCD11B23B579BD0047F1F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD11A23B579BD0047F1F6 /* SceneDelegate.swift */; };
-		ECCCD11D23B579BD0047F1F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD11C23B579BD0047F1F6 /* ViewController.swift */; };
-		ECCCD12023B579BD0047F1F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECCCD11E23B579BD0047F1F6 /* Main.storyboard */; };
 		ECCCD12223B579BF0047F1F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECCCD12123B579BF0047F1F6 /* Assets.xcassets */; };
 		ECCCD12523B579BF0047F1F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECCCD12323B579BF0047F1F6 /* LaunchScreen.storyboard */; };
 		ECCCD13023B579BF0047F1F6 /* ItunesMediaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD12F23B579BF0047F1F6 /* ItunesMediaTests.swift */; };
@@ -27,11 +24,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		ECCCD11523B579BD0047F1F6 /* ItunesMedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ItunesMedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECCCD11523B579BD0047F1F6 /* Itunes Media.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Itunes Media.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECCCD11823B579BD0047F1F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ECCCD11A23B579BD0047F1F6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ECCCD11C23B579BD0047F1F6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		ECCCD11F23B579BD0047F1F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ECCCD12123B579BF0047F1F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECCCD12423B579BF0047F1F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ECCCD12623B579BF0047F1F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -70,7 +64,7 @@
 		ECCCD11623B579BD0047F1F6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ECCCD11523B579BD0047F1F6 /* ItunesMedia.app */,
+				ECCCD11523B579BD0047F1F6 /* Itunes Media.app */,
 				ECCCD12B23B579BF0047F1F6 /* ItunesMediaTests.xctest */,
 			);
 			name = Products;
@@ -80,11 +74,8 @@
 			isa = PBXGroup;
 			children = (
 				ECCCD11823B579BD0047F1F6 /* AppDelegate.swift */,
-				ECCCD11A23B579BD0047F1F6 /* SceneDelegate.swift */,
-				ECCCD11C23B579BD0047F1F6 /* ViewController.swift */,
-				ECCCD11E23B579BD0047F1F6 /* Main.storyboard */,
-				ECCCD12123B579BF0047F1F6 /* Assets.xcassets */,
-				ECCCD12323B579BF0047F1F6 /* LaunchScreen.storyboard */,
+				ECCCD13C23B57ADC0047F1F6 /* Views */,
+				ECCCD13A23B57A110047F1F6 /* Resources */,
 				ECCCD12623B579BF0047F1F6 /* Info.plist */,
 			);
 			path = ItunesMedia;
@@ -97,6 +88,30 @@
 				ECCCD13123B579BF0047F1F6 /* Info.plist */,
 			);
 			path = ItunesMediaTests;
+			sourceTree = "<group>";
+		};
+		ECCCD13A23B57A110047F1F6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ECCCD13B23B57AD30047F1F6 /* Assets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		ECCCD13B23B57AD30047F1F6 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				ECCCD12123B579BF0047F1F6 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		ECCCD13C23B57ADC0047F1F6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ECCCD12323B579BF0047F1F6 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -116,7 +131,7 @@
 			);
 			name = ItunesMedia;
 			productName = ItunesMedia;
-			productReference = ECCCD11523B579BD0047F1F6 /* ItunesMedia.app */;
+			productReference = ECCCD11523B579BD0047F1F6 /* Itunes Media.app */;
 			productType = "com.apple.product-type.application";
 		};
 		ECCCD12A23B579BF0047F1F6 /* ItunesMediaTests */ = {
@@ -182,7 +197,6 @@
 			files = (
 				ECCCD12523B579BF0047F1F6 /* LaunchScreen.storyboard in Resources */,
 				ECCCD12223B579BF0047F1F6 /* Assets.xcassets in Resources */,
-				ECCCD12023B579BD0047F1F6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,9 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECCCD11D23B579BD0047F1F6 /* ViewController.swift in Sources */,
 				ECCCD11923B579BD0047F1F6 /* AppDelegate.swift in Sources */,
-				ECCCD11B23B579BD0047F1F6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,14 +237,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		ECCCD11E23B579BD0047F1F6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ECCCD11F23B579BD0047F1F6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		ECCCD12323B579BF0047F1F6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -365,14 +369,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2YD35YRH8N;
 				INFOPLIST_FILE = ItunesMedia/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ravn.itunesmedia.ios.ItunesMedia;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ravn.itunesmedia.ios;
+				PRODUCT_NAME = "Itunes Media";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -383,14 +388,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2YD35YRH8N;
 				INFOPLIST_FILE = ItunesMedia/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ravn.itunesmedia.ios.ItunesMedia;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ravn.itunesmedia.ios;
+				PRODUCT_NAME = "Itunes Media";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
