@@ -9,3 +9,10 @@
 
 ## [ADD] 2019-12-26 17:25
     * Add DI container setup
+
+## [ADD] 2019-12-26 20:40
+    * Add nuke framework
+    * Add rxswift framework
+    * Add moya framework
+    * Add media models
+    * Add media moya provider

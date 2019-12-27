@@ -6,7 +6,32 @@
 //  Copyright © 2019 Gustavo Lopez. All rights reserved.
 //
 
-import Foundation
+import Moya
+import Nuke
 
 // swiftlint:disable:next type_name
-enum K {}
+enum K {
+
+    // MARK: - Networking
+
+    enum Networking {
+        // swiftlint:disable:next force_unwrapping
+        static let baseURl = URL(string: "https://itunes.apple.com")!
+    }
+
+    // MARK: - Moya
+    
+    enum Moya {
+         static let plugins: [PluginType] = [NetworkLoggerPlugin()]
+    }
+
+    // MARK: - Nuke
+
+    enum Nuke {
+        static let options = ImageLoadingOptions(
+            placeholder: R.Base.placeholder.image,
+            transition: .fadeIn(duration: 0.33)
+        )
+    }
+
+}

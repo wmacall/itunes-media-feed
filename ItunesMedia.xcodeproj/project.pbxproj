@@ -23,6 +23,35 @@
 		ECCCD16F23B585570047F1F6 /* ViewModelAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD16E23B585570047F1F6 /* ViewModelAssembly.swift */; };
 		ECCCD17123B5856B0047F1F6 /* ViewControllerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD17023B5856B0047F1F6 /* ViewControllerAssembly.swift */; };
 		ECCCD17323B586090047F1F6 /* CoordinatorAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD17223B586090047F1F6 /* CoordinatorAssembly.swift */; };
+		ECCCD17523B587800047F1F6 /* TvShowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD17423B587800047F1F6 /* TvShowModel.swift */; };
+		ECCCD17723B587A40047F1F6 /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD17623B587A40047F1F6 /* Media.swift */; };
+		ECCCD17923B5885E0047F1F6 /* SongModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD17823B5885E0047F1F6 /* SongModel.swift */; };
+		ECCCD17B23B588B40047F1F6 /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD17A23B588B40047F1F6 /* MovieModel.swift */; };
+		ECCCD17D23B589EC0047F1F6 /* PodcastModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD17C23B589EC0047F1F6 /* PodcastModel.swift */; };
+		ECCCD17F23B58A9B0047F1F6 /* EbookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD17E23B58A9B0047F1F6 /* EbookModel.swift */; };
+		ECCCD18323B594AF0047F1F6 /* MediaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD18223B594AF0047F1F6 /* MediaType.swift */; };
+		ECCCD18523B59C930047F1F6 /* MediaProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD18423B59C930047F1F6 /* MediaProvider.swift */; };
+		ECCCD18723B59F5E0047F1F6 /* ResponseMediaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD18623B59F5E0047F1F6 /* ResponseMediaModel.swift */; };
+		ECCCD18923B5A18F0047F1F6 /* SearchRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD18823B5A18F0047F1F6 /* SearchRequestModel.swift */; };
+		ECCCD18B23B5A2FC0047F1F6 /* Codable+asDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD18A23B5A2FC0047F1F6 /* Codable+asDictionary.swift */; };
+		ECCCD18E23B5A4880047F1F6 /* R.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD18C23B5A4880047F1F6 /* R.swift */; };
+		ECCCD18F23B5A4880047F1F6 /* L10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD18D23B5A4880047F1F6 /* L10n.swift */; };
+		ECCCD19123B5A55E0047F1F6 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECCCD19023B5A55E0047F1F6 /* Alamofire.framework */; };
+		ECCCD19223B5A55E0047F1F6 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ECCCD19023B5A55E0047F1F6 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ECCCD19423B5A5620047F1F6 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECCCD19323B5A5620047F1F6 /* Moya.framework */; };
+		ECCCD19523B5A5620047F1F6 /* Moya.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ECCCD19323B5A5620047F1F6 /* Moya.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ECCCD19723B5A5660047F1F6 /* Nuke.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECCCD19623B5A5660047F1F6 /* Nuke.framework */; };
+		ECCCD19823B5A5660047F1F6 /* Nuke.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ECCCD19623B5A5660047F1F6 /* Nuke.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ECCCD19A23B5A56A0047F1F6 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECCCD19923B5A56A0047F1F6 /* Result.framework */; };
+		ECCCD19B23B5A56A0047F1F6 /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ECCCD19923B5A56A0047F1F6 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ECCCD19D23B5A5710047F1F6 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECCCD19C23B5A5710047F1F6 /* RxCocoa.framework */; };
+		ECCCD19E23B5A5710047F1F6 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ECCCD19C23B5A5710047F1F6 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ECCCD1A323B5A58D0047F1F6 /* RxMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECCCD1A223B5A58D0047F1F6 /* RxMoya.framework */; };
+		ECCCD1A423B5A58D0047F1F6 /* RxMoya.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ECCCD1A223B5A58D0047F1F6 /* RxMoya.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ECCCD1A623B5A5920047F1F6 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECCCD1A523B5A5920047F1F6 /* RxSwift.framework */; };
+		ECCCD1A723B5A5920047F1F6 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ECCCD1A523B5A5920047F1F6 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ECCCD1A823B5A5B80047F1F6 /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECCCD19F23B5A5770047F1F6 /* RxRelay.framework */; };
+		ECCCD1A923B5A5B80047F1F6 /* RxRelay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ECCCD19F23B5A5770047F1F6 /* RxRelay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +71,15 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				ECCCD19E23B5A5710047F1F6 /* RxCocoa.framework in Embed Frameworks */,
 				ECCCD16223B57FB80047F1F6 /* Swinject.framework in Embed Frameworks */,
+				ECCCD1A923B5A5B80047F1F6 /* RxRelay.framework in Embed Frameworks */,
+				ECCCD19823B5A5660047F1F6 /* Nuke.framework in Embed Frameworks */,
+				ECCCD19B23B5A56A0047F1F6 /* Result.framework in Embed Frameworks */,
+				ECCCD1A723B5A5920047F1F6 /* RxSwift.framework in Embed Frameworks */,
+				ECCCD19523B5A5620047F1F6 /* Moya.framework in Embed Frameworks */,
+				ECCCD1A423B5A58D0047F1F6 /* RxMoya.framework in Embed Frameworks */,
+				ECCCD19223B5A55E0047F1F6 /* Alamofire.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,6 +108,27 @@
 		ECCCD16E23B585570047F1F6 /* ViewModelAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelAssembly.swift; sourceTree = "<group>"; };
 		ECCCD17023B5856B0047F1F6 /* ViewControllerAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAssembly.swift; sourceTree = "<group>"; };
 		ECCCD17223B586090047F1F6 /* CoordinatorAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorAssembly.swift; sourceTree = "<group>"; };
+		ECCCD17423B587800047F1F6 /* TvShowModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowModel.swift; sourceTree = "<group>"; };
+		ECCCD17623B587A40047F1F6 /* Media.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
+		ECCCD17823B5885E0047F1F6 /* SongModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongModel.swift; sourceTree = "<group>"; };
+		ECCCD17A23B588B40047F1F6 /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
+		ECCCD17C23B589EC0047F1F6 /* PodcastModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastModel.swift; sourceTree = "<group>"; };
+		ECCCD17E23B58A9B0047F1F6 /* EbookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EbookModel.swift; sourceTree = "<group>"; };
+		ECCCD18223B594AF0047F1F6 /* MediaType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaType.swift; sourceTree = "<group>"; };
+		ECCCD18423B59C930047F1F6 /* MediaProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaProvider.swift; sourceTree = "<group>"; };
+		ECCCD18623B59F5E0047F1F6 /* ResponseMediaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseMediaModel.swift; sourceTree = "<group>"; };
+		ECCCD18823B5A18F0047F1F6 /* SearchRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRequestModel.swift; sourceTree = "<group>"; };
+		ECCCD18A23B5A2FC0047F1F6 /* Codable+asDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Codable+asDictionary.swift"; sourceTree = "<group>"; };
+		ECCCD18C23B5A4880047F1F6 /* R.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.swift; sourceTree = "<group>"; };
+		ECCCD18D23B5A4880047F1F6 /* L10n.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L10n.swift; sourceTree = "<group>"; };
+		ECCCD19023B5A55E0047F1F6 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		ECCCD19323B5A5620047F1F6 /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/iOS/Moya.framework; sourceTree = "<group>"; };
+		ECCCD19623B5A5660047F1F6 /* Nuke.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nuke.framework; path = Carthage/Build/iOS/Nuke.framework; sourceTree = "<group>"; };
+		ECCCD19923B5A56A0047F1F6 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		ECCCD19C23B5A5710047F1F6 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		ECCCD19F23B5A5770047F1F6 /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRelay.framework; path = Carthage/Build/iOS/RxRelay.framework; sourceTree = "<group>"; };
+		ECCCD1A223B5A58D0047F1F6 /* RxMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxMoya.framework; path = Carthage/Build/iOS/RxMoya.framework; sourceTree = "<group>"; };
+		ECCCD1A523B5A5920047F1F6 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +136,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECCCD19D23B5A5710047F1F6 /* RxCocoa.framework in Frameworks */,
 				ECCCD16123B57FB80047F1F6 /* Swinject.framework in Frameworks */,
+				ECCCD1A823B5A5B80047F1F6 /* RxRelay.framework in Frameworks */,
+				ECCCD19723B5A5660047F1F6 /* Nuke.framework in Frameworks */,
+				ECCCD19A23B5A56A0047F1F6 /* Result.framework in Frameworks */,
+				ECCCD1A623B5A5920047F1F6 /* RxSwift.framework in Frameworks */,
+				ECCCD19423B5A5620047F1F6 /* Moya.framework in Frameworks */,
+				ECCCD1A323B5A58D0047F1F6 /* RxMoya.framework in Frameworks */,
+				ECCCD19123B5A55E0047F1F6 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +211,8 @@
 			isa = PBXGroup;
 			children = (
 				ECCCD13B23B57AD30047F1F6 /* Assets */,
+				ECCCD18D23B5A4880047F1F6 /* L10n.swift */,
+				ECCCD18C23B5A4880047F1F6 /* R.swift */,
 				ECCCD15D23B57D530047F1F6 /* Localizable.strings */,
 			);
 			path = Resources;
@@ -234,6 +302,7 @@
 		ECCCD14623B57B7D0047F1F6 /* Enums */ = {
 			isa = PBXGroup;
 			children = (
+				ECCCD18223B594AF0047F1F6 /* MediaType.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -241,6 +310,7 @@
 		ECCCD14723B57B7F0047F1F6 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				ECCCD17623B587A40047F1F6 /* Media.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -249,6 +319,7 @@
 			isa = PBXGroup;
 			children = (
 				ECCCD14923B57B860047F1F6 /* Actions */,
+				ECCCD18A23B5A2FC0047F1F6 /* Codable+asDictionary.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -265,6 +336,11 @@
 			children = (
 				ECCCD14E23B57BB90047F1F6 /* ResponseModels */,
 				ECCCD14D23B57BB50047F1F6 /* RequestModels */,
+				ECCCD17423B587800047F1F6 /* TvShowModel.swift */,
+				ECCCD17823B5885E0047F1F6 /* SongModel.swift */,
+				ECCCD17A23B588B40047F1F6 /* MovieModel.swift */,
+				ECCCD17C23B589EC0047F1F6 /* PodcastModel.swift */,
+				ECCCD17E23B58A9B0047F1F6 /* EbookModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -272,6 +348,7 @@
 		ECCCD14D23B57BB50047F1F6 /* RequestModels */ = {
 			isa = PBXGroup;
 			children = (
+				ECCCD18823B5A18F0047F1F6 /* SearchRequestModel.swift */,
 			);
 			path = RequestModels;
 			sourceTree = "<group>";
@@ -279,6 +356,7 @@
 		ECCCD14E23B57BB90047F1F6 /* ResponseModels */ = {
 			isa = PBXGroup;
 			children = (
+				ECCCD18623B59F5E0047F1F6 /* ResponseMediaModel.swift */,
 			);
 			path = ResponseModels;
 			sourceTree = "<group>";
@@ -286,6 +364,7 @@
 		ECCCD14F23B57BD90047F1F6 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				ECCCD18423B59C930047F1F6 /* MediaProvider.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -316,6 +395,14 @@
 		ECCCD15F23B57FB80047F1F6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ECCCD1A523B5A5920047F1F6 /* RxSwift.framework */,
+				ECCCD1A223B5A58D0047F1F6 /* RxMoya.framework */,
+				ECCCD19F23B5A5770047F1F6 /* RxRelay.framework */,
+				ECCCD19C23B5A5710047F1F6 /* RxCocoa.framework */,
+				ECCCD19923B5A56A0047F1F6 /* Result.framework */,
+				ECCCD19623B5A5660047F1F6 /* Nuke.framework */,
+				ECCCD19323B5A5620047F1F6 /* Moya.framework */,
+				ECCCD19023B5A55E0047F1F6 /* Alamofire.framework */,
 				ECCCD16023B57FB80047F1F6 /* Swinject.framework */,
 			);
 			name = Frameworks;
@@ -446,6 +533,15 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Swinject.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Moya.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Nuke.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ReactiveMoya.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxMoya.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxRelay.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
 			);
 			name = "Carthage Copy Frameworks";
 			outputFileListPaths = (
@@ -472,7 +568,8 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "
+";
 		};
 		ECCCD16623B5823A0047F1F6 /* SwiftGen Assets Generation */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -499,13 +596,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECCCD18323B594AF0047F1F6 /* MediaType.swift in Sources */,
+				ECCCD18B23B5A2FC0047F1F6 /* Codable+asDictionary.swift in Sources */,
+				ECCCD17B23B588B40047F1F6 /* MovieModel.swift in Sources */,
 				ECCCD17323B586090047F1F6 /* CoordinatorAssembly.swift in Sources */,
+				ECCCD18723B59F5E0047F1F6 /* ResponseMediaModel.swift in Sources */,
 				ECCCD16F23B585570047F1F6 /* ViewModelAssembly.swift in Sources */,
+				ECCCD17523B587800047F1F6 /* TvShowModel.swift in Sources */,
 				ECCCD11923B579BD0047F1F6 /* AppDelegate.swift in Sources */,
+				ECCCD18E23B5A4880047F1F6 /* R.swift in Sources */,
+				ECCCD17723B587A40047F1F6 /* Media.swift in Sources */,
 				ECCCD16B23B585070047F1F6 /* UseCaseAssembly.swift in Sources */,
+				ECCCD18F23B5A4880047F1F6 /* L10n.swift in Sources */,
+				ECCCD18923B5A18F0047F1F6 /* SearchRequestModel.swift in Sources */,
 				ECCCD16923B584C50047F1F6 /* Injector.swift in Sources */,
+				ECCCD18523B59C930047F1F6 /* MediaProvider.swift in Sources */,
 				ECCCD14B23B57B8E0047F1F6 /* K.swift in Sources */,
+				ECCCD17D23B589EC0047F1F6 /* PodcastModel.swift in Sources */,
+				ECCCD17F23B58A9B0047F1F6 /* EbookModel.swift in Sources */,
 				ECCCD16D23B585190047F1F6 /* RepositoryAssembly.swift in Sources */,
+				ECCCD17923B5885E0047F1F6 /* SongModel.swift in Sources */,
 				ECCCD17123B5856B0047F1F6 /* ViewControllerAssembly.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
