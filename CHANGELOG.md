@@ -52,3 +52,6 @@
     * Add ContentMediaViewModel
     * Add TextSize helpers
     * Add MediaContentFactory for building media detail content
+
+## [FIX] 2019-12-27 17:40
+    * Fix now applicacion only uses light mode
