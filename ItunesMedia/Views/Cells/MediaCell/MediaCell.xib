@@ -12,41 +12,41 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MediaCell" customModule="Itunes_Media" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="178" height="170"/>
+            <rect key="frame" x="0.0" y="0.0" width="201" height="308"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="178" height="170"/>
+                <rect key="frame" x="0.0" y="0.0" width="201" height="308"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tgd-cl-qMP">
-                        <rect key="frame" x="0.0" y="0.0" width="178" height="170"/>
+                        <rect key="frame" x="0.0" y="0.0" width="201" height="308"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vcz-Mq-Wb7">
-                                <rect key="frame" x="0.0" y="0.0" width="178" height="88"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vcz-Mq-Wb7">
+                                <rect key="frame" x="8" y="0.0" width="185" height="185"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="88" id="7XY-Gm-oXZ"/>
+                                    <constraint firstAttribute="width" secondItem="Vcz-Mq-Wb7" secondAttribute="height" id="pIc-HB-7Gq"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="eXK-50-33p">
-                                <rect key="frame" x="16" y="96" width="74.5" height="58"/>
+                                <rect key="frame" x="8" y="193" width="74.5" height="107"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AtF-SC-ZUR">
-                                        <rect key="frame" x="0.0" y="0.0" width="74.5" height="19.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="74.5" height="35.5"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                         <color key="textColor" name="Black"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oat-Yr-oOz">
-                                        <rect key="frame" x="0.0" y="19.5" width="74.5" height="19"/>
+                                        <rect key="frame" x="0.0" y="35.5" width="74.5" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" name="BlackSmooth"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Release Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zcb-lO-2Uq" userLabel="Release Date">
-                                        <rect key="frame" x="0.0" y="38.5" width="74.5" height="19.5"/>
+                                        <rect key="frame" x="0.0" y="71.5" width="74.5" height="35.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" name="BlackSmooth"/>
                                         <nil key="highlightedColor"/>
@@ -59,12 +59,12 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="Vcz-Mq-Wb7" firstAttribute="leading" secondItem="Tgd-cl-qMP" secondAttribute="leading" id="BXT-TQ-KbD"/>
+                            <constraint firstItem="Vcz-Mq-Wb7" firstAttribute="leading" secondItem="Tgd-cl-qMP" secondAttribute="leading" constant="8" id="BXT-TQ-KbD"/>
                             <constraint firstItem="Vcz-Mq-Wb7" firstAttribute="top" secondItem="Tgd-cl-qMP" secondAttribute="top" id="F0U-Ij-yhF"/>
-                            <constraint firstItem="eXK-50-33p" firstAttribute="leading" secondItem="Tgd-cl-qMP" secondAttribute="leading" constant="16" id="HYt-Yj-Hvh"/>
-                            <constraint firstAttribute="bottom" secondItem="eXK-50-33p" secondAttribute="bottom" constant="16" id="LSr-cW-hG5"/>
-                            <constraint firstAttribute="trailing" secondItem="Vcz-Mq-Wb7" secondAttribute="trailing" id="ONI-wt-hLt"/>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="eXK-50-33p" secondAttribute="trailing" constant="16" id="oql-FU-QGt"/>
+                            <constraint firstItem="eXK-50-33p" firstAttribute="leading" secondItem="Tgd-cl-qMP" secondAttribute="leading" constant="8" id="HYt-Yj-Hvh"/>
+                            <constraint firstAttribute="bottom" secondItem="eXK-50-33p" secondAttribute="bottom" constant="8" id="LSr-cW-hG5"/>
+                            <constraint firstAttribute="trailing" secondItem="Vcz-Mq-Wb7" secondAttribute="trailing" constant="8" id="ONI-wt-hLt"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="eXK-50-33p" secondAttribute="trailing" constant="8" id="oql-FU-QGt"/>
                             <constraint firstItem="eXK-50-33p" firstAttribute="top" secondItem="Vcz-Mq-Wb7" secondAttribute="bottom" constant="8" symbolic="YES" id="yGB-kL-V8F"/>
                         </constraints>
                     </view>
@@ -77,7 +77,7 @@
                 <constraint firstAttribute="bottom" secondItem="Tgd-cl-qMP" secondAttribute="bottom" id="pCp-6w-NBx"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
-            <size key="customSize" width="178" height="188"/>
+            <size key="customSize" width="201" height="326"/>
             <connections>
                 <outlet property="imageView" destination="Vcz-Mq-Wb7" id="ORB-VD-JgD"/>
                 <outlet property="infoStackView" destination="eXK-50-33p" id="5gx-Wr-PmY"/>
@@ -85,7 +85,7 @@
                 <outlet property="subtitleLabel" destination="oat-Yr-oOz" id="PrI-ev-6qH"/>
                 <outlet property="titleLabel" destination="AtF-SC-ZUR" id="xrc-FU-Yrn"/>
             </connections>
-            <point key="canvasLocation" x="-65.217391304347828" y="162.05357142857142"/>
+            <point key="canvasLocation" x="-48.550724637681164" y="115.84821428571428"/>
         </collectionViewCell>
     </objects>
     <resources>

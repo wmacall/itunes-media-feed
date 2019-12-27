@@ -14,8 +14,8 @@ extension UIResponder {
         next?.searchValueDidChange(value)
     }
     
-    @objc func didTapSeeAllOf(mediaKind: Any) {
-        next?.didTapSeeAllOf(mediaKind: mediaKind)
+    @objc func didSelectMedia(_ viewModel: Any) {
+        next?.didSelectMedia(viewModel)
     }
     
 }

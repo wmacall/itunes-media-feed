@@ -23,18 +23,27 @@ final class MediaCell: UICollectionViewCell {
     
     // MARK: - LifeCycle
     
+    var viewModel: MediaCellViewModel?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         imageView.layer.cornerRadius = 12
         imageView.layer.masksToBounds = true
         layer.cornerRadius = 12
         clipsToBounds = true
+        addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleSelection)))
     }
     
     override func prepareForReuse() {
         super.prepareForReuse()
         stopSkeletonAnimation()
         hideSkeleton()
+    }
+    
+    @objc private func handleSelection() {
+        guard let viewModel = viewModel else { return }
+        
+        didSelectMedia(viewModel)
     }
     
 }
@@ -63,8 +72,11 @@ extension MediaCell: ListBindable {
                 )
             }
             
+            self.viewModel = songCellViewModel
+            
         default: break
         }
+                
     }
     
 }

@@ -23,6 +23,7 @@ final class FeedHeaderViewModel {
 }
 
 // MARK: - ListDiffable
+
 extension FeedHeaderViewModel: ListDiffable {
     
     func diffIdentifier() -> NSObjectProtocol {

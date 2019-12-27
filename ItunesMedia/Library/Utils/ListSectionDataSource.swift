@@ -46,6 +46,10 @@ extension ListSectionDataSource: ListAdapterDataSource {
         case is LoadingCellViewModel:
             return LoadingSectionController()
             
+        case is MediaDetailCellViewModel,
+             is TextBasedCellViewModel:
+            return ContentDetailSectionController()
+            
         default:
             return ListSectionController()
         }

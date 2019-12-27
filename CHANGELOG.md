@@ -39,3 +39,16 @@
     * Add load more to feed and extension to check if near to bottom
     * Add NSMutableAttributedString helpers
     * Add keyboard handling to media feed
+
+## [ADD, UPDATE] 2019-12-27 17:30
+    * Update pagination items per page to 25
+    * Add media detail 
+    * Add aspect ratio to image media cell to 1
+    * Add content detail section controller
+    * Add media detail cell
+    * Add option to open media on apple, music, tv and podcast
+    * Add TextContentBased Cell
+    * Add ContentMediaViewController 
+    * Add ContentMediaViewModel
+    * Add TextSize helpers
+    * Add MediaContentFactory for building media detail content

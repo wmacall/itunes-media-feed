@@ -42,7 +42,13 @@ final class MediaFeedCoordinator: Coordinator {
 extension MediaFeedCoordinator: MediaFeedViewControllerDelegate {
     
     func mediaFeedViewControllerDidSelectMedia(_ media: Media) {
-        
+        guard let mediaContentViewController = Injector.sharedAssambler.resolver.resolve(
+                MediaContentViewController.self,
+                argument: media
+            )
+            else { fatalError("Unable to resolve UsersViewController") }
+                
+        presenter.pushViewController(mediaContentViewController, animated: true)
     }
     
 }

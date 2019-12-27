@@ -126,7 +126,8 @@ final class FeedMediaFactory {
                 artworkUrl: songModel.artworkUrl100,
                 title: songModel.trackName,
                 subtitle: songModel.artistName,
-                datetime: songModel.releaseDate
+                datetime: songModel.releaseDate,
+                model: songModel
             )
             
         case let movieModel as MovieModel:
@@ -134,7 +135,8 @@ final class FeedMediaFactory {
                 artworkUrl: movieModel.artworkUrl60,
                 title: movieModel.trackName,
                 subtitle: movieModel.artistName,
-                datetime: movieModel.releaseDate
+                datetime: movieModel.releaseDate,
+                model: movieModel
             )
             
         case let podcastModel as PodcastModel:
@@ -142,7 +144,8 @@ final class FeedMediaFactory {
                 artworkUrl: podcastModel.artworkUrl600,
                 title: podcastModel.trackName,
                 subtitle: podcastModel.artistName,
-                datetime: podcastModel.releaseDate
+                datetime: podcastModel.releaseDate,
+                model: podcastModel
             )
             
         case let tvShowModel as TvShowModel:
@@ -150,7 +153,8 @@ final class FeedMediaFactory {
                 artworkUrl: tvShowModel.artworkUrl60,
                 title: tvShowModel.collectionName,
                 subtitle: tvShowModel.artistName,
-                datetime: tvShowModel.releaseDate
+                datetime: tvShowModel.releaseDate,
+                model: tvShowModel
             )
             
         case let ebookModel as EbookModel:
@@ -158,7 +162,8 @@ final class FeedMediaFactory {
                 artworkUrl: ebookModel.artworkUrl60,
                 title: ebookModel.trackName,
                 subtitle: ebookModel.artistName,
-                datetime: ebookModel.releaseDate
+                datetime: ebookModel.releaseDate,
+                model: ebookModel
             )
             
         default: return nil
