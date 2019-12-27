@@ -55,3 +55,6 @@
 
 ## [FIX] 2019-12-27 17:40
     * Fix now applicacion only uses light mode
+
+## [ADD] 2019-12-27 17:56
+    * Add date default date formats

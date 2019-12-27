@@ -17,7 +17,7 @@ final class MediaContentFactory {
                 artworkUrl: songModel.artworkUrl100,
                 title: songModel.trackName,
                 subtitle: songModel.artistName,
-                footer: songModel.releaseDate,
+                datetime: songModel.releaseDate,
                 url: songModel.collectionViewUrl
             )
             
@@ -33,7 +33,7 @@ final class MediaContentFactory {
                 artworkUrl: movieModel.artworkUrl60,
                 title: movieModel.trackName,
                 subtitle: movieModel.artistName,
-                footer: movieModel.releaseDate,
+                datetime: movieModel.releaseDate,
                 url: movieModel.collectionViewUrl
             )
             
@@ -54,7 +54,7 @@ final class MediaContentFactory {
                 artworkUrl: podcastModel.artworkUrl600,
                 title: podcastModel.trackName,
                 subtitle: podcastModel.artistName,
-                footer: podcastModel.releaseDate,
+                datetime: podcastModel.releaseDate,
                 url: podcastModel.collectionViewUrl
             )
                         
@@ -70,7 +70,7 @@ final class MediaContentFactory {
                 artworkUrl: tvShowModel.artworkUrl60,
                 title: tvShowModel.collectionName,
                 subtitle: tvShowModel.artistName,
-                footer: tvShowModel.releaseDate,
+                datetime: tvShowModel.releaseDate,
                 url: tvShowModel.trackViewUrl
             )
             
@@ -91,7 +91,7 @@ final class MediaContentFactory {
                 artworkUrl: ebookModel.artworkUrl60,
                 title: ebookModel.trackName,
                 subtitle: ebookModel.artistName,
-                footer: ebookModel.releaseDate,
+                datetime: ebookModel.releaseDate,
                 url: ebookModel.trackViewUrl
             )
                         

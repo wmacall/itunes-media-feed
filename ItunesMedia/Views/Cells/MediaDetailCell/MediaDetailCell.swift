@@ -51,7 +51,7 @@ extension MediaDetailCell: ListBindable {
         
         titleLabel.text = viewModel.title
         subtitleLabel.text = viewModel.subtitle
-        footerLabel.text = viewModel.footer
+        footerLabel.text = viewModel.date
         
         if let imageURL = viewModel.imageURL {
             Nuke.loadImage(
