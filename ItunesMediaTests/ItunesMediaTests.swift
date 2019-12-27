@@ -7,28 +7,32 @@
 //
 
 import XCTest
-@testable import ItunesMedia
+@testable import Itunes_Media
 
 class ItunesMediaTests: XCTestCase {
 
-    override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testPageBasedPaginationToLimitAndOffset() {
+        let itmesPerPage = 10
+
+        let limitOffsetCalculatorService = LimitOffsetCalculatorService()
+        let limitOffsetForFirstPage = limitOffsetCalculatorService.limitOffset(
+            from: 1,
+            itemsPerPage: itmesPerPage
+        )
+
+        let limitOffsetForSecondPage = limitOffsetCalculatorService.limitOffset(
+            from: 2,
+            itemsPerPage: itmesPerPage
+        )
+
+        // First Page
+        XCTAssertEqual(limitOffsetForFirstPage.0, itmesPerPage)
+        XCTAssertEqual(limitOffsetForFirstPage.1, 0)
+
+        // Second Page
+        XCTAssertEqual(limitOffsetForSecondPage.0, itmesPerPage)
+        XCTAssertEqual(limitOffsetForSecondPage.1, 10)
     }
 
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
 
 }

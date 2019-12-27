@@ -18,7 +18,14 @@ enum MediaType: String {
 }
 
 extension MediaType {
-    func model(for kind: String) -> Media {
-        fatalError("Not implemented yet")
+    var backgroundImage: String {
+        switch self {
+        case .movie: return R.Base.placeholder.name
+        case .podcast: return R.Base.placeholder.name
+        case .music: return R.Base.placeholder.name
+        case .tvShow: return R.Base.placeholder.name
+        case .ebook: return R.Base.placeholder.name        
+        case .all: return R.Base.placeholder.name
+        }
     }
 }

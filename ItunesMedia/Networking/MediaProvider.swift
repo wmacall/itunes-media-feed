@@ -40,8 +40,12 @@ extension MediaProvider: TargetType {
 
         switch self {
         case let .search(requestModel):
-            if let requestParameters = try? requestModel.asDictionary() {
-                parameters = requestParameters
+            parameters["term"] = requestModel.query ?? ""
+            
+            if let offset = requestModel.offset,
+                let limit = requestModel.limit {
+                parameters["offset"] = offset
+                parameters["limit"] = limit
             }
         }
 

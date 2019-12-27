@@ -20,8 +20,20 @@
 internal enum R {
   internal enum Base {
     internal static let placeholder = ImageAsset(name: "placeholder")
+    internal static let results = ImageAsset(name: "results")
   }
   internal enum Colors {
+    internal static let black = ColorAsset(name: "Black")
+    internal static let blackSmooth = ColorAsset(name: "BlackSmooth")
+    internal static let blueBase = ColorAsset(name: "BlueBase")
+    internal static let blueDark = ColorAsset(name: "BlueDark")
+    internal static let blueSmooth = ColorAsset(name: "BlueSmooth")
+    internal static let grayBase = ColorAsset(name: "GrayBase")
+    internal static let grayDark = ColorAsset(name: "GrayDark")
+    internal static let graySmooth = ColorAsset(name: "GraySmooth")
+    internal static let orangeBase = ColorAsset(name: "OrangeBase")
+    internal static let orangeDark = ColorAsset(name: "OrangeDark")
+    internal static let orangeSmooth = ColorAsset(name: "OrangeSmooth")
   }
   internal enum Icons {
   }
