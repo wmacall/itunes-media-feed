@@ -12,25 +12,25 @@ import XCTest
 class ItunesMediaTests: XCTestCase {
 
     func testPageBasedPaginationToLimitAndOffset() {
-        let itmesPerPage = 10
+        let itemsPerPage = 10
 
         let limitOffsetCalculatorService = LimitOffsetCalculatorService()
         let limitOffsetForFirstPage = limitOffsetCalculatorService.limitOffset(
             from: 1,
-            itemsPerPage: itmesPerPage
+            itemsPerPage: itemsPerPage
         )
 
         let limitOffsetForSecondPage = limitOffsetCalculatorService.limitOffset(
             from: 2,
-            itemsPerPage: itmesPerPage
+            itemsPerPage: itemsPerPage
         )
 
         // First Page
-        XCTAssertEqual(limitOffsetForFirstPage.0, itmesPerPage)
+        XCTAssertEqual(limitOffsetForFirstPage.0, itemsPerPage)
         XCTAssertEqual(limitOffsetForFirstPage.1, 0)
 
         // Second Page
-        XCTAssertEqual(limitOffsetForSecondPage.0, itmesPerPage)
+        XCTAssertEqual(limitOffsetForSecondPage.0, itemsPerPage)
         XCTAssertEqual(limitOffsetForSecondPage.1, 10)
     }
 

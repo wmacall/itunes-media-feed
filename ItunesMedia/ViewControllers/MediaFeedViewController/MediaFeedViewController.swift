@@ -16,17 +16,7 @@ final class MediaFeedViewController: UIViewController {
     // MARK: - Components
     
     private lazy var collectionView: UICollectionView = {
-        let layout = UICollectionViewFlowLayout()
-        layout.scrollDirection = .vertical
-        
-        let collectionView = UICollectionView(
-            frame: .zero,
-            collectionViewLayout: layout
-        )
-        collectionView.backgroundColor = .white
-        collectionView.showsVerticalScrollIndicator = false
-        collectionView.translatesAutoresizingMaskIntoConstraints = false
-        return collectionView
+       return UICollectionView.defaultCollectionView()
     }()
     
     private lazy var refreshControl: UIRefreshControl = {
@@ -76,7 +66,7 @@ final class MediaFeedViewController: UIViewController {
         listAdapter.collectionView = collectionView
         collectionView.refreshControl = refreshControl
         keyboardHandling()
-        listAdapter.scrollViewDelegate = self
+        listAdapter.scrollViewDelegate = self        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -88,6 +78,13 @@ final class MediaFeedViewController: UIViewController {
         
     override func searchValueDidChange(_ value: String?) {
         viewModel.searchQuery.onNext(value)
+    }
+    
+    override func didSelectMedia(_ viewModel: Any) {
+        guard let viewModel = viewModel as? MediaCellViewModel
+            else { return }
+        
+        delegate?.mediaFeedViewControllerDidSelectMedia(viewModel.model)
     }
     
     // MARK: - ViewModel
@@ -123,13 +120,7 @@ final class MediaFeedViewController: UIViewController {
     
     private func setupLayout() {
         view.addSubview(collectionView)
-        
-        NSLayoutConstraint.activate([
-            collectionView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-            collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            collectionView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
-            collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
-        ])
+        collectionView.pinToEdges(to: view)
     }
     
     @objc private func keyboardWillChange(_ notification: Notification) {

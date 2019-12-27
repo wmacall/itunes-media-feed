@@ -20,7 +20,7 @@ enum K {
         static let baseURl = URL(string: "https://itunes.apple.com")!
         
         enum Pagination {
-            static let itemsPerPage = 15
+            static let itemsPerPage = 25
         }
     }
     
@@ -45,7 +45,7 @@ enum K {
         enum Feed {
             static let headerViewHeight: CGFloat = 200
             static let sectionHeaderViewHeight: CGFloat = 60
-            static let horizontalSectionHeight: CGFloat = 170
+            static let horizontalSectionHeight: CGFloat = 250
         }
     }
     

@@ -11,3 +11,7 @@
 "sectionTitlePlaceholder" = "Section Placeholder";
 "searchEmptyStateTitle" = "No results found";
 "searchEmptyStateSubtitle" = "Try adjusting your search to find what you are looking for";
+"genreList" = "%@ %@";
+"genreTitle" = "Genre";
+"genresTitle" = "Genres";
+"descriptionTitle" = "Description";

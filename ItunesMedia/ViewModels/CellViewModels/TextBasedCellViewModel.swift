@@ -1,5 +1,5 @@
 //
-//  SognCellViewModel.swift
+//  TextBasedCellViewModel.swift
 //  ItunesMedia
 //
 //  Created by Gustavo Lopez on 12/27/19.
@@ -8,55 +8,38 @@
 
 import IGListKit
 
-final class MediaCellViewModel {
+final class TextBasedCellViewModel {
     
     // MARK: - Attributes
     
     let identifier: String
-    let artworkUrl: String
     let title: String
-    let subtitle: String
-    let datetime: String
+    let content: String
     
     // MARK: - LifeCycle
     
-    init(artworkUrl: String,
-         title: String,
-         subtitle: String,
-         datetime: String) {
-        
-        self.artworkUrl = artworkUrl
+    init(title: String, content: String) {
         self.title = title
-        self.subtitle = subtitle
-        self.datetime = datetime
+        self.content = content
         identifier = UUID().uuidString
-    }
-    
-    // MARK: - Properties
-    
-    var imageURL: URL? {
-        return URL(string: artworkUrl)
-    }
-    
-    var date: String {
-        return datetime // TODO: apply format
     }
     
 }
 
 // MARK: - ListDiffable
 
-extension MediaCellViewModel: ListDiffable {
+extension TextBasedCellViewModel: ListDiffable {
     
     func diffIdentifier() -> NSObjectProtocol {
         return identifier as NSObjectProtocol
     }
     
     func isEqual(toDiffableObject object: ListDiffable?) -> Bool {
-        guard let object = object as? MediaCellViewModel
+        guard let object = object as? TextBasedCellViewModel
             else { return false }
         
         return identifier == object.identifier
     }
     
 }
+
