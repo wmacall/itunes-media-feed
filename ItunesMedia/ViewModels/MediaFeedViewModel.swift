@@ -83,8 +83,8 @@ final class MediaFeedViewModel {
         let models = paginationStrategy.models.value
             .compactMap { $0 as? Media }
 
-        var listObjects: [ListDiffable] = []
-        listObjects.append(FeedHeaderViewModel(day: "FRIDAY, DECEMBER 27"))
+        var listObjects: [ListDiffable] = []        
+        listObjects.append(FeedHeaderViewModel(day: Date().defaultFormat()))
         
         let sectionObjects = feedMediaFactory.sections(
             with: models,

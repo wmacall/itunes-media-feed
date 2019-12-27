@@ -24,9 +24,9 @@ final class EmptyStateSectionController: ListSectionController {
         guard let collectionContext = collectionContext
             else { return .zero }
         
-        inset.top = collectionContext.containerSize(for: self).height * 0.10
+        inset.top = collectionContext.containerSize(for: self).height * 0.08
         let width = collectionContext.containerSize(for: self).width
-        return CGSize(width: width, height: 300)
+        return CGSize(width: width, height: 325)
     }
     
     override func cellForItem(at index: Int) -> UICollectionViewCell {

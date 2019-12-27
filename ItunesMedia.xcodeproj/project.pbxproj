@@ -43,6 +43,7 @@
 		EC2DF64E23B63903007DB07E /* FeedHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC2DF64D23B63903007DB07E /* FeedHeaderView.xib */; };
 		EC2DF65023B63B6E007DB07E /* NSMutableAttributedString+helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2DF64F23B63B6E007DB07E /* NSMutableAttributedString+helpers.swift */; };
 		EC2DF65223B63F8E007DB07E /* UIResponder+actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2DF65123B63F8E007DB07E /* UIResponder+actions.swift */; };
+		EC2FBF2423B6CE580015AF68 /* Date+formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2FBF2323B6CE580015AF68 /* Date+formatters.swift */; };
 		ECCCD11923B579BD0047F1F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD11823B579BD0047F1F6 /* AppDelegate.swift */; };
 		ECCCD12223B579BF0047F1F6 /* Base.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECCCD12123B579BF0047F1F6 /* Base.xcassets */; };
 		ECCCD12523B579BF0047F1F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECCCD12323B579BF0047F1F6 /* LaunchScreen.storyboard */; };
@@ -197,6 +198,7 @@
 		EC2DF64D23B63903007DB07E /* FeedHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedHeaderView.xib; sourceTree = "<group>"; };
 		EC2DF64F23B63B6E007DB07E /* NSMutableAttributedString+helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+helpers.swift"; sourceTree = "<group>"; };
 		EC2DF65123B63F8E007DB07E /* UIResponder+actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIResponder+actions.swift"; sourceTree = "<group>"; };
+		EC2FBF2323B6CE580015AF68 /* Date+formatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+formatters.swift"; sourceTree = "<group>"; };
 		ECCCD11523B579BD0047F1F6 /* Itunes Media.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Itunes Media.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECCCD11823B579BD0047F1F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECCCD12123B579BF0047F1F6 /* Base.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Base.xcassets; sourceTree = "<group>"; };
@@ -593,6 +595,7 @@
 				EC0650C123B6788B00319F64 /* ScrollView+LoadMore.swift */,
 				EC0650CD23B68BEB00319F64 /* UICollectionView+default.swift */,
 				EC0650E523B6B6C200319F64 /* UIView+pintToEdges.swift */,
+				EC2FBF2323B6CE580015AF68 /* Date+formatters.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -966,6 +969,7 @@
 				EC0650C423B67E4E00319F64 /* LoadingSectionController.swift in Sources */,
 				ECEC0B8523B6532100D71F54 /* FactoryAssembly.swift in Sources */,
 				EC2DF65223B63F8E007DB07E /* UIResponder+actions.swift in Sources */,
+				EC2FBF2423B6CE580015AF68 /* Date+formatters.swift in Sources */,
 				ECEC0B7323B6453D00D71F54 /* SectionedMediaSectionController.swift in Sources */,
 				ECCCD1BF23B5B5100047F1F6 /* MediaFeedViewModel.swift in Sources */,
 				EC0650E623B6B6C200319F64 /* UIView+pintToEdges.swift in Sources */,

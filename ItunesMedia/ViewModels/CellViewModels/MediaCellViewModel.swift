@@ -42,7 +42,7 @@ final class MediaCellViewModel {
     }
     
     var date: String {
-        return datetime // TODO: apply format
+        return datetime.toDate()?.mediaDateFormat() ?? datetime
     }
     
 }

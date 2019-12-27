@@ -16,7 +16,7 @@ final class MediaDetailCellViewModel {
     let artworkUrl: String
     let title: String
     let subtitle: String
-    let footer: String
+    let datetime: String
     let url: String
     
     // MARK: - LifeCycle
@@ -24,13 +24,13 @@ final class MediaDetailCellViewModel {
     init(artworkUrl: String,
          title: String,
          subtitle: String,
-         footer: String,
+         datetime: String,
          url: String) {
         
         self.artworkUrl = artworkUrl
         self.title = title
         self.subtitle = subtitle
-        self.footer = footer
+        self.datetime = datetime
         self.url = url
         identifier = UUID().uuidString
     }
@@ -43,6 +43,10 @@ final class MediaDetailCellViewModel {
     
     var storeURL: URL? {
         return URL(string: url)
+    }
+    
+    var date: String {
+        return datetime.toDate()?.mediaDateFormat() ?? datetime
     }
 
 }
