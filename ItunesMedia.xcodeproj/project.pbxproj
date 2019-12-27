@@ -52,6 +52,10 @@
 		ECCCD1A723B5A5920047F1F6 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ECCCD1A523B5A5920047F1F6 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		ECCCD1A823B5A5B80047F1F6 /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECCCD19F23B5A5770047F1F6 /* RxRelay.framework */; };
 		ECCCD1A923B5A5B80047F1F6 /* RxRelay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ECCCD19F23B5A5770047F1F6 /* RxRelay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ECCCD1AB23B5A6D80047F1F6 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD1AA23B5A6D80047F1F6 /* Coordinator.swift */; };
+		ECCCD1AD23B5A6F70047F1F6 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD1AC23B5A6F70047F1F6 /* ApplicationCoordinator.swift */; };
+		ECCCD1AF23B5A7920047F1F6 /* MediaFeedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD1AE23B5A7920047F1F6 /* MediaFeedCoordinator.swift */; };
+		ECCCD1B223B5A7C10047F1F6 /* MediaFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD1B123B5A7C10047F1F6 /* MediaFeedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +133,10 @@
 		ECCCD19F23B5A5770047F1F6 /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRelay.framework; path = Carthage/Build/iOS/RxRelay.framework; sourceTree = "<group>"; };
 		ECCCD1A223B5A58D0047F1F6 /* RxMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxMoya.framework; path = Carthage/Build/iOS/RxMoya.framework; sourceTree = "<group>"; };
 		ECCCD1A523B5A5920047F1F6 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		ECCCD1AA23B5A6D80047F1F6 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		ECCCD1AC23B5A6F70047F1F6 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		ECCCD1AE23B5A7920047F1F6 /* MediaFeedCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaFeedCoordinator.swift; sourceTree = "<group>"; };
+		ECCCD1B123B5A7C10047F1F6 /* MediaFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaFeedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,6 +247,8 @@
 		ECCCD13D23B57B510047F1F6 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				ECCCD1AC23B5A6F70047F1F6 /* ApplicationCoordinator.swift */,
+				ECCCD1AE23B5A7920047F1F6 /* MediaFeedCoordinator.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -246,6 +256,7 @@
 		ECCCD13E23B57B580047F1F6 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				ECCCD1B023B5A7B10047F1F6 /* MediaFeedViewController */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -311,6 +322,7 @@
 			isa = PBXGroup;
 			children = (
 				ECCCD17623B587A40047F1F6 /* Media.swift */,
+				ECCCD1AA23B5A6D80047F1F6 /* Coordinator.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -418,6 +430,14 @@
 				ECCCD17223B586090047F1F6 /* CoordinatorAssembly.swift */,
 			);
 			path = Assamblers;
+			sourceTree = "<group>";
+		};
+		ECCCD1B023B5A7B10047F1F6 /* MediaFeedViewController */ = {
+			isa = PBXGroup;
+			children = (
+				ECCCD1B123B5A7C10047F1F6 /* MediaFeedViewController.swift */,
+			);
+			path = MediaFeedViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -602,11 +622,15 @@
 				ECCCD17323B586090047F1F6 /* CoordinatorAssembly.swift in Sources */,
 				ECCCD18723B59F5E0047F1F6 /* ResponseMediaModel.swift in Sources */,
 				ECCCD16F23B585570047F1F6 /* ViewModelAssembly.swift in Sources */,
+				ECCCD1AB23B5A6D80047F1F6 /* Coordinator.swift in Sources */,
 				ECCCD17523B587800047F1F6 /* TvShowModel.swift in Sources */,
 				ECCCD11923B579BD0047F1F6 /* AppDelegate.swift in Sources */,
 				ECCCD18E23B5A4880047F1F6 /* R.swift in Sources */,
+				ECCCD1B223B5A7C10047F1F6 /* MediaFeedViewController.swift in Sources */,
 				ECCCD17723B587A40047F1F6 /* Media.swift in Sources */,
 				ECCCD16B23B585070047F1F6 /* UseCaseAssembly.swift in Sources */,
+				ECCCD1AD23B5A6F70047F1F6 /* ApplicationCoordinator.swift in Sources */,
+				ECCCD1AF23B5A7920047F1F6 /* MediaFeedCoordinator.swift in Sources */,
 				ECCCD18F23B5A4880047F1F6 /* L10n.swift in Sources */,
 				ECCCD18923B5A18F0047F1F6 /* SearchRequestModel.swift in Sources */,
 				ECCCD16923B584C50047F1F6 /* Injector.swift in Sources */,
