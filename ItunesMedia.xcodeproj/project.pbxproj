@@ -17,6 +17,12 @@
 		ECCCD15B23B57D530047F1F6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = ECCCD15D23B57D530047F1F6 /* Localizable.strings */; };
 		ECCCD16123B57FB80047F1F6 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECCCD16023B57FB80047F1F6 /* Swinject.framework */; };
 		ECCCD16223B57FB80047F1F6 /* Swinject.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ECCCD16023B57FB80047F1F6 /* Swinject.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ECCCD16923B584C50047F1F6 /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD16823B584C50047F1F6 /* Injector.swift */; };
+		ECCCD16B23B585070047F1F6 /* UseCaseAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD16A23B585070047F1F6 /* UseCaseAssembly.swift */; };
+		ECCCD16D23B585190047F1F6 /* RepositoryAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD16C23B585190047F1F6 /* RepositoryAssembly.swift */; };
+		ECCCD16F23B585570047F1F6 /* ViewModelAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD16E23B585570047F1F6 /* ViewModelAssembly.swift */; };
+		ECCCD17123B5856B0047F1F6 /* ViewControllerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD17023B5856B0047F1F6 /* ViewControllerAssembly.swift */; };
+		ECCCD17323B586090047F1F6 /* CoordinatorAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD17223B586090047F1F6 /* CoordinatorAssembly.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +65,12 @@
 		ECCCD15C23B57D530047F1F6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		ECCCD15E23B57D6A0047F1F6 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		ECCCD16023B57FB80047F1F6 /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
+		ECCCD16823B584C50047F1F6 /* Injector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injector.swift; sourceTree = "<group>"; };
+		ECCCD16A23B585070047F1F6 /* UseCaseAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseAssembly.swift; sourceTree = "<group>"; };
+		ECCCD16C23B585190047F1F6 /* RepositoryAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryAssembly.swift; sourceTree = "<group>"; };
+		ECCCD16E23B585570047F1F6 /* ViewModelAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelAssembly.swift; sourceTree = "<group>"; };
+		ECCCD17023B5856B0047F1F6 /* ViewControllerAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAssembly.swift; sourceTree = "<group>"; };
+		ECCCD17223B586090047F1F6 /* CoordinatorAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorAssembly.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -295,6 +307,8 @@
 		ECCCD15223B57C030047F1F6 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
+				ECCCD16723B584AF0047F1F6 /* Assamblers */,
+				ECCCD16823B584C50047F1F6 /* Injector.swift */,
 			);
 			path = Dependencies;
 			sourceTree = "<group>";
@@ -305,6 +319,18 @@
 				ECCCD16023B57FB80047F1F6 /* Swinject.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ECCCD16723B584AF0047F1F6 /* Assamblers */ = {
+			isa = PBXGroup;
+			children = (
+				ECCCD16A23B585070047F1F6 /* UseCaseAssembly.swift */,
+				ECCCD16C23B585190047F1F6 /* RepositoryAssembly.swift */,
+				ECCCD16E23B585570047F1F6 /* ViewModelAssembly.swift */,
+				ECCCD17023B5856B0047F1F6 /* ViewControllerAssembly.swift */,
+				ECCCD17223B586090047F1F6 /* CoordinatorAssembly.swift */,
+			);
+			path = Assamblers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -473,8 +499,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECCCD17323B586090047F1F6 /* CoordinatorAssembly.swift in Sources */,
+				ECCCD16F23B585570047F1F6 /* ViewModelAssembly.swift in Sources */,
 				ECCCD11923B579BD0047F1F6 /* AppDelegate.swift in Sources */,
+				ECCCD16B23B585070047F1F6 /* UseCaseAssembly.swift in Sources */,
+				ECCCD16923B584C50047F1F6 /* Injector.swift in Sources */,
 				ECCCD14B23B57B8E0047F1F6 /* K.swift in Sources */,
+				ECCCD16D23B585190047F1F6 /* RepositoryAssembly.swift in Sources */,
+				ECCCD17123B5856B0047F1F6 /* ViewControllerAssembly.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

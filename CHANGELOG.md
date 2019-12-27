@@ -6,3 +6,6 @@
     * Add .gitignore
     * Add README & CHANGELOG files
     * Add Swiftgen, Carthage & SwiftLint buildphases
+
+## [ADD] 2019-12-26 17:25
+    * Add DI container setup
