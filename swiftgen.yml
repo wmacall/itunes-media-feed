@@ -1,0 +1,20 @@
+input_dir: ItunesMedia/Resources
+output_dir: ItunesMedia/Resources
+
+strings:
+  inputs: en.lproj/Localizable.strings
+  outputs:
+    - templateName: structured-swift4
+      output: L10n.swift
+
+xcassets:
+  inputs:
+      - Assets/Base.xcassets
+      - Assets/Colors.xcassets
+      - Assets/Icons.xcassets      
+
+  outputs:
+    - templateName: swift4
+      output: R.swift
+      params:
+        enumName: R

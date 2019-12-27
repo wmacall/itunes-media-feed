@@ -8,9 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		ECCCD11923B579BD0047F1F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD11823B579BD0047F1F6 /* AppDelegate.swift */; };
-		ECCCD12223B579BF0047F1F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECCCD12123B579BF0047F1F6 /* Assets.xcassets */; };
+		ECCCD12223B579BF0047F1F6 /* Base.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECCCD12123B579BF0047F1F6 /* Base.xcassets */; };
 		ECCCD12523B579BF0047F1F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECCCD12323B579BF0047F1F6 /* LaunchScreen.storyboard */; };
 		ECCCD13023B579BF0047F1F6 /* ItunesMediaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD12F23B579BF0047F1F6 /* ItunesMediaTests.swift */; };
+		ECCCD14B23B57B8E0047F1F6 /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD14A23B57B8E0047F1F6 /* K.swift */; };
+		ECCCD15523B57C9D0047F1F6 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECCCD15423B57C9D0047F1F6 /* Colors.xcassets */; };
+		ECCCD15723B57CAF0047F1F6 /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECCCD15623B57CAF0047F1F6 /* Icons.xcassets */; };
+		ECCCD15B23B57D530047F1F6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = ECCCD15D23B57D530047F1F6 /* Localizable.strings */; };
+		ECCCD16123B57FB80047F1F6 /* Swinject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECCCD16023B57FB80047F1F6 /* Swinject.framework */; };
+		ECCCD16223B57FB80047F1F6 /* Swinject.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ECCCD16023B57FB80047F1F6 /* Swinject.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,15 +29,36 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		ECCCD16323B57FB80047F1F6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				ECCCD16223B57FB80047F1F6 /* Swinject.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		ECCCD11523B579BD0047F1F6 /* Itunes Media.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Itunes Media.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECCCD11823B579BD0047F1F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ECCCD12123B579BF0047F1F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ECCCD12123B579BF0047F1F6 /* Base.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Base.xcassets; sourceTree = "<group>"; };
 		ECCCD12423B579BF0047F1F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ECCCD12623B579BF0047F1F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ECCCD12B23B579BF0047F1F6 /* ItunesMediaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ItunesMediaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECCCD12F23B579BF0047F1F6 /* ItunesMediaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesMediaTests.swift; sourceTree = "<group>"; };
 		ECCCD13123B579BF0047F1F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECCCD14A23B57B8E0047F1F6 /* K.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
+		ECCCD15423B57C9D0047F1F6 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		ECCCD15623B57CAF0047F1F6 /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
+		ECCCD15A23B57D470047F1F6 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		ECCCD15C23B57D530047F1F6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		ECCCD15E23B57D6A0047F1F6 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		ECCCD16023B57FB80047F1F6 /* Swinject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swinject.framework; path = Carthage/Build/iOS/Swinject.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECCCD16123B57FB80047F1F6 /* Swinject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +86,7 @@
 				ECCCD11723B579BD0047F1F6 /* ItunesMedia */,
 				ECCCD12E23B579BF0047F1F6 /* ItunesMediaTests */,
 				ECCCD11623B579BD0047F1F6 /* Products */,
+				ECCCD15F23B57FB80047F1F6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,9 +102,19 @@
 		ECCCD11723B579BD0047F1F6 /* ItunesMedia */ = {
 			isa = PBXGroup;
 			children = (
+				ECCCD14A23B57B8E0047F1F6 /* K.swift */,
 				ECCCD11823B579BD0047F1F6 /* AppDelegate.swift */,
+				ECCCD13D23B57B510047F1F6 /* Navigation */,
+				ECCCD13E23B57B580047F1F6 /* ViewControllers */,
+				ECCCD13F23B57B600047F1F6 /* ViewModels */,
+				ECCCD14C23B57BB20047F1F6 /* Models */,
 				ECCCD13C23B57ADC0047F1F6 /* Views */,
+				ECCCD14023B57B630047F1F6 /* Services */,
+				ECCCD14223B57B6C0047F1F6 /* UseCases */,
+				ECCCD14123B57B680047F1F6 /* Repositories */,
+				ECCCD14F23B57BD90047F1F6 /* Networking */,
 				ECCCD13A23B57A110047F1F6 /* Resources */,
+				ECCCD14323B57B730047F1F6 /* Library */,
 				ECCCD12623B579BF0047F1F6 /* Info.plist */,
 			);
 			path = ItunesMedia;
@@ -94,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				ECCCD13B23B57AD30047F1F6 /* Assets */,
+				ECCCD15D23B57D530047F1F6 /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -101,7 +141,9 @@
 		ECCCD13B23B57AD30047F1F6 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				ECCCD12123B579BF0047F1F6 /* Assets.xcassets */,
+				ECCCD12123B579BF0047F1F6 /* Base.xcassets */,
+				ECCCD15423B57C9D0047F1F6 /* Colors.xcassets */,
+				ECCCD15623B57CAF0047F1F6 /* Icons.xcassets */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -114,6 +156,157 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		ECCCD13D23B57B510047F1F6 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		ECCCD13E23B57B580047F1F6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		ECCCD13F23B57B600047F1F6 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		ECCCD14023B57B630047F1F6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		ECCCD14123B57B680047F1F6 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		ECCCD14223B57B6C0047F1F6 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		ECCCD14323B57B730047F1F6 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				ECCCD14423B57B760047F1F6 /* Utils */,
+				ECCCD14623B57B7D0047F1F6 /* Enums */,
+				ECCCD15023B57BF00047F1F6 /* Factories */,
+				ECCCD15123B57BF30047F1F6 /* Strategies */,
+				ECCCD14723B57B7F0047F1F6 /* Protocols */,
+				ECCCD14823B57B830047F1F6 /* Extensions */,
+				ECCCD15223B57C030047F1F6 /* Dependencies */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		ECCCD14423B57B760047F1F6 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		ECCCD14623B57B7D0047F1F6 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		ECCCD14723B57B7F0047F1F6 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		ECCCD14823B57B830047F1F6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				ECCCD14923B57B860047F1F6 /* Actions */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		ECCCD14923B57B860047F1F6 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		ECCCD14C23B57BB20047F1F6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ECCCD14E23B57BB90047F1F6 /* ResponseModels */,
+				ECCCD14D23B57BB50047F1F6 /* RequestModels */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ECCCD14D23B57BB50047F1F6 /* RequestModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RequestModels;
+			sourceTree = "<group>";
+		};
+		ECCCD14E23B57BB90047F1F6 /* ResponseModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ResponseModels;
+			sourceTree = "<group>";
+		};
+		ECCCD14F23B57BD90047F1F6 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		ECCCD15023B57BF00047F1F6 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		ECCCD15123B57BF30047F1F6 /* Strategies */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Strategies;
+			sourceTree = "<group>";
+		};
+		ECCCD15223B57C030047F1F6 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		ECCCD15F23B57FB80047F1F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ECCCD16023B57FB80047F1F6 /* Swinject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -121,9 +314,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ECCCD13423B579BF0047F1F6 /* Build configuration list for PBXNativeTarget "ItunesMedia" */;
 			buildPhases = (
+				ECCCD16623B5823A0047F1F6 /* SwiftGen Assets Generation */,
 				ECCCD11123B579BD0047F1F6 /* Sources */,
 				ECCCD11223B579BD0047F1F6 /* Frameworks */,
 				ECCCD11323B579BD0047F1F6 /* Resources */,
+				ECCCD16323B57FB80047F1F6 /* Embed Frameworks */,
+				ECCCD16423B580CE0047F1F6 /* Carthage Copy Frameworks */,
+				ECCCD16523B581E60047F1F6 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -178,6 +375,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = ECCCD10C23B579BD0047F1F6;
 			productRefGroup = ECCCD11623B579BD0047F1F6 /* Products */;
@@ -195,8 +393,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECCCD15B23B57D530047F1F6 /* Localizable.strings in Resources */,
+				ECCCD15523B57C9D0047F1F6 /* Colors.xcassets in Resources */,
 				ECCCD12523B579BF0047F1F6 /* LaunchScreen.storyboard in Resources */,
-				ECCCD12223B579BF0047F1F6 /* Assets.xcassets in Resources */,
+				ECCCD15723B57CAF0047F1F6 /* Icons.xcassets in Resources */,
+				ECCCD12223B579BF0047F1F6 /* Base.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,12 +410,71 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		ECCCD16423B580CE0047F1F6 /* Carthage Copy Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Swinject.framework",
+			);
+			name = "Carthage Copy Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+		ECCCD16523B581E60047F1F6 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		ECCCD16623B5823A0047F1F6 /* SwiftGen Assets Generation */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "SwiftGen Assets Generation";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftgen >/dev/null; then\n  swiftgen\nelse\n  echo \"warning: SwiftGen not installed, download it from https://github.com/SwiftGen/SwiftGen\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ECCCD11123B579BD0047F1F6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				ECCCD11923B579BD0047F1F6 /* AppDelegate.swift in Sources */,
+				ECCCD14B23B57B8E0047F1F6 /* K.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,8 +501,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				ECCCD12423B579BF0047F1F6 /* Base */,
+				ECCCD15A23B57D470047F1F6 /* es */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		ECCCD15D23B57D530047F1F6 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECCCD15C23B57D530047F1F6 /* en */,
+				ECCCD15E23B57D6A0047F1F6 /* es */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -252,6 +522,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -312,6 +583,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -368,6 +640,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2YD35YRH8N;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ItunesMedia/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -387,6 +663,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2YD35YRH8N;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ItunesMedia/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
