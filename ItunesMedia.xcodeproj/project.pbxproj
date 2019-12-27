@@ -7,6 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC0650B323B669F900319F64 /* UIViewController+keyboardHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0650B223B669F900319F64 /* UIViewController+keyboardHandling.swift */; };
+		EC0650B523B66FE200319F64 /* EmptyStateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0650B423B66FE200319F64 /* EmptyStateViewModel.swift */; };
+		EC0650BB23B670E900319F64 /* EmptyStateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0650B923B670E900319F64 /* EmptyStateCell.swift */; };
+		EC0650BC23B670E900319F64 /* EmptyStateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC0650BA23B670E900319F64 /* EmptyStateCell.xib */; };
+		EC0650BE23B6728200319F64 /* EmptyStateSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0650BD23B6728200319F64 /* EmptyStateSectionController.swift */; };
+		EC0650C023B677A900319F64 /* LoadingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0650BF23B677A900319F64 /* LoadingCell.swift */; };
+		EC0650C223B6788B00319F64 /* ScrollView+LoadMore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0650C123B6788B00319F64 /* ScrollView+LoadMore.swift */; };
+		EC0650C423B67E4E00319F64 /* LoadingSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0650C323B67E4E00319F64 /* LoadingSectionController.swift */; };
+		EC2DF62F23B5DF81007DB07E /* SkeletonCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2DF62E23B5DF81007DB07E /* SkeletonCellViewModel.swift */; };
+		EC2DF63123B5E2BB007DB07E /* KindType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2DF63023B5E2BB007DB07E /* KindType.swift */; };
+		EC2DF63323B5E759007DB07E /* Sequence+grouping.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2DF63223B5E759007DB07E /* Sequence+grouping.swift */; };
+		EC2DF63523B5EBAB007DB07E /* MediaSectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2DF63423B5EBAB007DB07E /* MediaSectionViewModel.swift */; };
+		EC2DF63923B5EDB5007DB07E /* LoadingCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2DF63823B5EDB5007DB07E /* LoadingCellViewModel.swift */; };
+		EC2DF63B23B5F5AB007DB07E /* FeedHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2DF63A23B5F5AB007DB07E /* FeedHeaderViewModel.swift */; };
+		EC2DF63D23B6353F007DB07E /* MediaFeedViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2DF63C23B6353F007DB07E /* MediaFeedViewControllerDelegate.swift */; };
+		EC2DF63F23B63780007DB07E /* ListSectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2DF63E23B63780007DB07E /* ListSectionDataSource.swift */; };
+		EC2DF64223B63817007DB07E /* FeedHeaderSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2DF64123B63817007DB07E /* FeedHeaderSectionController.swift */; };
+		EC2DF64623B63876007DB07E /* EmptyHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2DF64523B63876007DB07E /* EmptyHeaderView.swift */; };
+		EC2DF64823B638D2007DB07E /* FeedHeaderReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2DF64723B638D2007DB07E /* FeedHeaderReusableView.swift */; };
+		EC2DF64C23B638FC007DB07E /* FeedHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2DF64B23B638FC007DB07E /* FeedHeaderView.swift */; };
+		EC2DF64E23B63903007DB07E /* FeedHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC2DF64D23B63903007DB07E /* FeedHeaderView.xib */; };
+		EC2DF65023B63B6E007DB07E /* NSMutableAttributedString+helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2DF64F23B63B6E007DB07E /* NSMutableAttributedString+helpers.swift */; };
+		EC2DF65223B63F8E007DB07E /* UIResponder+actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2DF65123B63F8E007DB07E /* UIResponder+actions.swift */; };
 		ECCCD11923B579BD0047F1F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD11823B579BD0047F1F6 /* AppDelegate.swift */; };
 		ECCCD12223B579BF0047F1F6 /* Base.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECCCD12123B579BF0047F1F6 /* Base.xcassets */; };
 		ECCCD12523B579BF0047F1F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECCCD12323B579BF0047F1F6 /* LaunchScreen.storyboard */; };
@@ -31,9 +54,8 @@
 		ECCCD17F23B58A9B0047F1F6 /* EbookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD17E23B58A9B0047F1F6 /* EbookModel.swift */; };
 		ECCCD18323B594AF0047F1F6 /* MediaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD18223B594AF0047F1F6 /* MediaType.swift */; };
 		ECCCD18523B59C930047F1F6 /* MediaProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD18423B59C930047F1F6 /* MediaProvider.swift */; };
-		ECCCD18723B59F5E0047F1F6 /* ResponseMediaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD18623B59F5E0047F1F6 /* ResponseMediaModel.swift */; };
+		ECCCD18723B59F5E0047F1F6 /* FullMediaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD18623B59F5E0047F1F6 /* FullMediaModel.swift */; };
 		ECCCD18923B5A18F0047F1F6 /* SearchRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD18823B5A18F0047F1F6 /* SearchRequestModel.swift */; };
-		ECCCD18B23B5A2FC0047F1F6 /* Codable+asDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD18A23B5A2FC0047F1F6 /* Codable+asDictionary.swift */; };
 		ECCCD18E23B5A4880047F1F6 /* R.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD18C23B5A4880047F1F6 /* R.swift */; };
 		ECCCD18F23B5A4880047F1F6 /* L10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD18D23B5A4880047F1F6 /* L10n.swift */; };
 		ECCCD19123B5A55E0047F1F6 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECCCD19023B5A55E0047F1F6 /* Alamofire.framework */; };
@@ -56,6 +78,38 @@
 		ECCCD1AD23B5A6F70047F1F6 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD1AC23B5A6F70047F1F6 /* ApplicationCoordinator.swift */; };
 		ECCCD1AF23B5A7920047F1F6 /* MediaFeedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD1AE23B5A7920047F1F6 /* MediaFeedCoordinator.swift */; };
 		ECCCD1B223B5A7C10047F1F6 /* MediaFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD1B123B5A7C10047F1F6 /* MediaFeedViewController.swift */; };
+		ECCCD1B523B5ABF10047F1F6 /* PaginationStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD1B423B5ABF10047F1F6 /* PaginationStrategy.swift */; };
+		ECCCD1B923B5AE7C0047F1F6 /* PaginatedRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD1B823B5AE7C0047F1F6 /* PaginatedRequestModel.swift */; };
+		ECCCD1BB23B5AF7C0047F1F6 /* Commons.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD1BA23B5AF7C0047F1F6 /* Commons.swift */; };
+		ECCCD1BD23B5AF940047F1F6 /* ViewModelBindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD1BC23B5AF940047F1F6 /* ViewModelBindable.swift */; };
+		ECCCD1BF23B5B5100047F1F6 /* MediaFeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD1BE23B5B5100047F1F6 /* MediaFeedViewModel.swift */; };
+		ECCCD1C123B5B6D90047F1F6 /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD1C023B5B6D90047F1F6 /* ResponseModel.swift */; };
+		ECCCD1C323B5B7340047F1F6 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD1C223B5B7340047F1F6 /* Model.swift */; };
+		ECCCD1C523B5BC8D0047F1F6 /* Reusable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECCCD1C423B5BC8D0047F1F6 /* Reusable.framework */; };
+		ECCCD1C623B5BC8D0047F1F6 /* Reusable.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ECCCD1C423B5BC8D0047F1F6 /* Reusable.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ECCCD1C823B5BE600047F1F6 /* FeedMediaFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD1C723B5BE600047F1F6 /* FeedMediaFactory.swift */; };
+		ECCCD1CB23B5C0600047F1F6 /* MediaRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD1CA23B5C0600047F1F6 /* MediaRepository.swift */; };
+		ECCCD1CD23B5C1390047F1F6 /* IGListDiffKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECCCD1CC23B5C1390047F1F6 /* IGListDiffKit.framework */; };
+		ECCCD1CE23B5C1390047F1F6 /* IGListDiffKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ECCCD1CC23B5C1390047F1F6 /* IGListDiffKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ECCCD1D023B5C13E0047F1F6 /* SkeletonView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECCCD1CF23B5C13E0047F1F6 /* SkeletonView.framework */; };
+		ECCCD1D123B5C13E0047F1F6 /* SkeletonView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ECCCD1CF23B5C13E0047F1F6 /* SkeletonView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ECCCD1D423B5C6B00047F1F6 /* SearchMediaUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD1D323B5C6B00047F1F6 /* SearchMediaUseCase.swift */; };
+		ECCCD1D723B5C85F0047F1F6 /* LimitOffsetBasedAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD1D623B5C85F0047F1F6 /* LimitOffsetBasedAdapter.swift */; };
+		ECCCD1D923B5C8E80047F1F6 /* LimitOffsetCalculatorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD1D823B5C8E80047F1F6 /* LimitOffsetCalculatorService.swift */; };
+		ECEC0B6A23B6415F00D71F54 /* EmptyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEC0B6923B6415F00D71F54 /* EmptyCell.swift */; };
+		ECEC0B7023B6429A00D71F54 /* SectionTitleHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEC0B6E23B6429A00D71F54 /* SectionTitleHeaderView.swift */; };
+		ECEC0B7123B6429A00D71F54 /* SectionTitleHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECEC0B6F23B6429A00D71F54 /* SectionTitleHeaderView.xib */; };
+		ECEC0B7323B6453D00D71F54 /* SectionedMediaSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEC0B7223B6453D00D71F54 /* SectionedMediaSectionController.swift */; };
+		ECEC0B7523B6490000D71F54 /* MediaSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEC0B7423B6490000D71F54 /* MediaSectionController.swift */; };
+		ECEC0B7923B64AE500D71F54 /* MediaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEC0B7723B64AE500D71F54 /* MediaCell.swift */; };
+		ECEC0B7A23B64AE500D71F54 /* MediaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECEC0B7823B64AE500D71F54 /* MediaCell.xib */; };
+		ECEC0B7D23B64D9000D71F54 /* SognCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEC0B7C23B64D9000D71F54 /* SognCellViewModel.swift */; };
+		ECEC0B8023B6512800D71F54 /* UtilsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEC0B7F23B6512800D71F54 /* UtilsAssembly.swift */; };
+		ECEC0B8223B651BC00D71F54 /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEC0B8123B651BC00D71F54 /* ServiceAssembly.swift */; };
+		ECEC0B8523B6532100D71F54 /* FactoryAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEC0B8423B6532100D71F54 /* FactoryAssembly.swift */; };
+		ECFC55EF23B5CD1E00ECC0FD /* WebBasedMediaRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFC55EE23B5CD1E00ECC0FD /* WebBasedMediaRepository.swift */; };
+		ECFC55F123B5CEC300ECC0FD /* SearchMediaUseCaseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFC55F023B5CEC300ECC0FD /* SearchMediaUseCaseType.swift */; };
+		ECFC55F323B5CFE400ECC0FD /* RestPaginationStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFC55F223B5CFE400ECC0FD /* RestPaginationStrategy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,7 +129,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				ECCCD1CE23B5C1390047F1F6 /* IGListDiffKit.framework in Embed Frameworks */,
 				ECCCD19E23B5A5710047F1F6 /* RxCocoa.framework in Embed Frameworks */,
+				ECCCD1D123B5C13E0047F1F6 /* SkeletonView.framework in Embed Frameworks */,
 				ECCCD16223B57FB80047F1F6 /* Swinject.framework in Embed Frameworks */,
 				ECCCD1A923B5A5B80047F1F6 /* RxRelay.framework in Embed Frameworks */,
 				ECCCD19823B5A5660047F1F6 /* Nuke.framework in Embed Frameworks */,
@@ -84,6 +140,7 @@
 				ECCCD19523B5A5620047F1F6 /* Moya.framework in Embed Frameworks */,
 				ECCCD1A423B5A58D0047F1F6 /* RxMoya.framework in Embed Frameworks */,
 				ECCCD19223B5A55E0047F1F6 /* Alamofire.framework in Embed Frameworks */,
+				ECCCD1C623B5BC8D0047F1F6 /* Reusable.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -91,6 +148,29 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		EC0650B223B669F900319F64 /* UIViewController+keyboardHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+keyboardHandling.swift"; sourceTree = "<group>"; };
+		EC0650B423B66FE200319F64 /* EmptyStateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateViewModel.swift; sourceTree = "<group>"; };
+		EC0650B923B670E900319F64 /* EmptyStateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateCell.swift; sourceTree = "<group>"; };
+		EC0650BA23B670E900319F64 /* EmptyStateCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyStateCell.xib; sourceTree = "<group>"; };
+		EC0650BD23B6728200319F64 /* EmptyStateSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateSectionController.swift; sourceTree = "<group>"; };
+		EC0650BF23B677A900319F64 /* LoadingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingCell.swift; sourceTree = "<group>"; };
+		EC0650C123B6788B00319F64 /* ScrollView+LoadMore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScrollView+LoadMore.swift"; sourceTree = "<group>"; };
+		EC0650C323B67E4E00319F64 /* LoadingSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingSectionController.swift; sourceTree = "<group>"; };
+		EC2DF62E23B5DF81007DB07E /* SkeletonCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonCellViewModel.swift; sourceTree = "<group>"; };
+		EC2DF63023B5E2BB007DB07E /* KindType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KindType.swift; sourceTree = "<group>"; };
+		EC2DF63223B5E759007DB07E /* Sequence+grouping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+grouping.swift"; sourceTree = "<group>"; };
+		EC2DF63423B5EBAB007DB07E /* MediaSectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaSectionViewModel.swift; sourceTree = "<group>"; };
+		EC2DF63823B5EDB5007DB07E /* LoadingCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingCellViewModel.swift; sourceTree = "<group>"; };
+		EC2DF63A23B5F5AB007DB07E /* FeedHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedHeaderViewModel.swift; sourceTree = "<group>"; };
+		EC2DF63C23B6353F007DB07E /* MediaFeedViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaFeedViewControllerDelegate.swift; sourceTree = "<group>"; };
+		EC2DF63E23B63780007DB07E /* ListSectionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSectionDataSource.swift; sourceTree = "<group>"; };
+		EC2DF64123B63817007DB07E /* FeedHeaderSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedHeaderSectionController.swift; sourceTree = "<group>"; };
+		EC2DF64523B63876007DB07E /* EmptyHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyHeaderView.swift; sourceTree = "<group>"; };
+		EC2DF64723B638D2007DB07E /* FeedHeaderReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedHeaderReusableView.swift; sourceTree = "<group>"; };
+		EC2DF64B23B638FC007DB07E /* FeedHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedHeaderView.swift; sourceTree = "<group>"; };
+		EC2DF64D23B63903007DB07E /* FeedHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedHeaderView.xib; sourceTree = "<group>"; };
+		EC2DF64F23B63B6E007DB07E /* NSMutableAttributedString+helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+helpers.swift"; sourceTree = "<group>"; };
+		EC2DF65123B63F8E007DB07E /* UIResponder+actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIResponder+actions.swift"; sourceTree = "<group>"; };
 		ECCCD11523B579BD0047F1F6 /* Itunes Media.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Itunes Media.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECCCD11823B579BD0047F1F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECCCD12123B579BF0047F1F6 /* Base.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Base.xcassets; sourceTree = "<group>"; };
@@ -120,9 +200,8 @@
 		ECCCD17E23B58A9B0047F1F6 /* EbookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EbookModel.swift; sourceTree = "<group>"; };
 		ECCCD18223B594AF0047F1F6 /* MediaType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaType.swift; sourceTree = "<group>"; };
 		ECCCD18423B59C930047F1F6 /* MediaProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaProvider.swift; sourceTree = "<group>"; };
-		ECCCD18623B59F5E0047F1F6 /* ResponseMediaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseMediaModel.swift; sourceTree = "<group>"; };
+		ECCCD18623B59F5E0047F1F6 /* FullMediaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullMediaModel.swift; sourceTree = "<group>"; };
 		ECCCD18823B5A18F0047F1F6 /* SearchRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRequestModel.swift; sourceTree = "<group>"; };
-		ECCCD18A23B5A2FC0047F1F6 /* Codable+asDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Codable+asDictionary.swift"; sourceTree = "<group>"; };
 		ECCCD18C23B5A4880047F1F6 /* R.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.swift; sourceTree = "<group>"; };
 		ECCCD18D23B5A4880047F1F6 /* L10n.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L10n.swift; sourceTree = "<group>"; };
 		ECCCD19023B5A55E0047F1F6 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
@@ -137,6 +216,35 @@
 		ECCCD1AC23B5A6F70047F1F6 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 		ECCCD1AE23B5A7920047F1F6 /* MediaFeedCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaFeedCoordinator.swift; sourceTree = "<group>"; };
 		ECCCD1B123B5A7C10047F1F6 /* MediaFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaFeedViewController.swift; sourceTree = "<group>"; };
+		ECCCD1B423B5ABF10047F1F6 /* PaginationStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginationStrategy.swift; sourceTree = "<group>"; };
+		ECCCD1B823B5AE7C0047F1F6 /* PaginatedRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginatedRequestModel.swift; sourceTree = "<group>"; };
+		ECCCD1BA23B5AF7C0047F1F6 /* Commons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commons.swift; sourceTree = "<group>"; };
+		ECCCD1BC23B5AF940047F1F6 /* ViewModelBindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelBindable.swift; sourceTree = "<group>"; };
+		ECCCD1BE23B5B5100047F1F6 /* MediaFeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaFeedViewModel.swift; sourceTree = "<group>"; };
+		ECCCD1C023B5B6D90047F1F6 /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
+		ECCCD1C223B5B7340047F1F6 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		ECCCD1C423B5BC8D0047F1F6 /* Reusable.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reusable.framework; path = Carthage/Build/iOS/Reusable.framework; sourceTree = "<group>"; };
+		ECCCD1C723B5BE600047F1F6 /* FeedMediaFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedMediaFactory.swift; sourceTree = "<group>"; };
+		ECCCD1CA23B5C0600047F1F6 /* MediaRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaRepository.swift; sourceTree = "<group>"; };
+		ECCCD1CC23B5C1390047F1F6 /* IGListDiffKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IGListDiffKit.framework; path = Carthage/Build/iOS/IGListDiffKit.framework; sourceTree = "<group>"; };
+		ECCCD1CF23B5C13E0047F1F6 /* SkeletonView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SkeletonView.framework; path = Carthage/Build/iOS/SkeletonView.framework; sourceTree = "<group>"; };
+		ECCCD1D323B5C6B00047F1F6 /* SearchMediaUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaUseCase.swift; sourceTree = "<group>"; };
+		ECCCD1D623B5C85F0047F1F6 /* LimitOffsetBasedAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimitOffsetBasedAdapter.swift; sourceTree = "<group>"; };
+		ECCCD1D823B5C8E80047F1F6 /* LimitOffsetCalculatorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimitOffsetCalculatorService.swift; sourceTree = "<group>"; };
+		ECEC0B6923B6415F00D71F54 /* EmptyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyCell.swift; sourceTree = "<group>"; };
+		ECEC0B6E23B6429A00D71F54 /* SectionTitleHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTitleHeaderView.swift; sourceTree = "<group>"; };
+		ECEC0B6F23B6429A00D71F54 /* SectionTitleHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionTitleHeaderView.xib; sourceTree = "<group>"; };
+		ECEC0B7223B6453D00D71F54 /* SectionedMediaSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionedMediaSectionController.swift; sourceTree = "<group>"; };
+		ECEC0B7423B6490000D71F54 /* MediaSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaSectionController.swift; sourceTree = "<group>"; };
+		ECEC0B7723B64AE500D71F54 /* MediaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaCell.swift; sourceTree = "<group>"; };
+		ECEC0B7823B64AE500D71F54 /* MediaCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MediaCell.xib; sourceTree = "<group>"; };
+		ECEC0B7C23B64D9000D71F54 /* SognCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SognCellViewModel.swift; sourceTree = "<group>"; };
+		ECEC0B7F23B6512800D71F54 /* UtilsAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilsAssembly.swift; sourceTree = "<group>"; };
+		ECEC0B8123B651BC00D71F54 /* ServiceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAssembly.swift; sourceTree = "<group>"; };
+		ECEC0B8423B6532100D71F54 /* FactoryAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryAssembly.swift; sourceTree = "<group>"; };
+		ECFC55EE23B5CD1E00ECC0FD /* WebBasedMediaRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebBasedMediaRepository.swift; sourceTree = "<group>"; };
+		ECFC55F023B5CEC300ECC0FD /* SearchMediaUseCaseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMediaUseCaseType.swift; sourceTree = "<group>"; };
+		ECFC55F223B5CFE400ECC0FD /* RestPaginationStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestPaginationStrategy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,7 +252,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECCCD1CD23B5C1390047F1F6 /* IGListDiffKit.framework in Frameworks */,
 				ECCCD19D23B5A5710047F1F6 /* RxCocoa.framework in Frameworks */,
+				ECCCD1D023B5C13E0047F1F6 /* SkeletonView.framework in Frameworks */,
 				ECCCD16123B57FB80047F1F6 /* Swinject.framework in Frameworks */,
 				ECCCD1A823B5A5B80047F1F6 /* RxRelay.framework in Frameworks */,
 				ECCCD19723B5A5660047F1F6 /* Nuke.framework in Frameworks */,
@@ -153,6 +263,7 @@
 				ECCCD19423B5A5620047F1F6 /* Moya.framework in Frameworks */,
 				ECCCD1A323B5A58D0047F1F6 /* RxMoya.framework in Frameworks */,
 				ECCCD19123B5A55E0047F1F6 /* Alamofire.framework in Frameworks */,
+				ECCCD1C523B5BC8D0047F1F6 /* Reusable.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +277,74 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EC0650B823B670D400319F64 /* EmptyStateCell */ = {
+			isa = PBXGroup;
+			children = (
+				EC0650B923B670E900319F64 /* EmptyStateCell.swift */,
+				EC0650BA23B670E900319F64 /* EmptyStateCell.xib */,
+			);
+			path = EmptyStateCell;
+			sourceTree = "<group>";
+		};
+		EC2DF62C23B5DF4C007DB07E /* CellViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				ECEC0B7C23B64D9000D71F54 /* SognCellViewModel.swift */,
+				EC2DF62E23B5DF81007DB07E /* SkeletonCellViewModel.swift */,
+				EC2DF63823B5EDB5007DB07E /* LoadingCellViewModel.swift */,
+				EC0650B423B66FE200319F64 /* EmptyStateViewModel.swift */,
+			);
+			path = CellViewModels;
+			sourceTree = "<group>";
+		};
+		EC2DF62D23B5DF5C007DB07E /* SectionViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				EC2DF63423B5EBAB007DB07E /* MediaSectionViewModel.swift */,
+				EC2DF63A23B5F5AB007DB07E /* FeedHeaderViewModel.swift */,
+			);
+			path = SectionViewModels;
+			sourceTree = "<group>";
+		};
+		EC2DF64023B637AC007DB07E /* SectionControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EC2DF64123B63817007DB07E /* FeedHeaderSectionController.swift */,
+				ECEC0B7223B6453D00D71F54 /* SectionedMediaSectionController.swift */,
+				ECEC0B7423B6490000D71F54 /* MediaSectionController.swift */,
+				EC0650BD23B6728200319F64 /* EmptyStateSectionController.swift */,
+				EC0650C323B67E4E00319F64 /* LoadingSectionController.swift */,
+			);
+			path = SectionControllers;
+			sourceTree = "<group>";
+		};
+		EC2DF64323B63866007DB07E /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				ECEC0B6B23B6425D00D71F54 /* ActionableCollectionHeaderView */,
+				EC2DF64523B63876007DB07E /* EmptyHeaderView.swift */,
+				EC2DF64723B638D2007DB07E /* FeedHeaderReusableView.swift */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		EC2DF64923B638EF007DB07E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EC2DF64A23B638F8007DB07E /* FeedHeaderView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EC2DF64A23B638F8007DB07E /* FeedHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				EC2DF64B23B638FC007DB07E /* FeedHeaderView.swift */,
+				EC2DF64D23B63903007DB07E /* FeedHeaderView.xib */,
+			);
+			path = FeedHeaderView;
+			sourceTree = "<group>";
+		};
 		ECCCD10C23B579BD0047F1F6 = {
 			isa = PBXGroup;
 			children = (
@@ -239,6 +418,9 @@
 		ECCCD13C23B57ADC0047F1F6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				ECEC0B6623B6413000D71F54 /* Cells */,
+				EC2DF64923B638EF007DB07E /* Views */,
+				EC2DF64323B63866007DB07E /* Headers */,
 				ECCCD12323B579BF0047F1F6 /* LaunchScreen.storyboard */,
 			);
 			path = Views;
@@ -256,6 +438,7 @@
 		ECCCD13E23B57B580047F1F6 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				EC2DF64023B637AC007DB07E /* SectionControllers */,
 				ECCCD1B023B5A7B10047F1F6 /* MediaFeedViewController */,
 			);
 			path = ViewControllers;
@@ -264,6 +447,9 @@
 		ECCCD13F23B57B600047F1F6 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				EC2DF62D23B5DF5C007DB07E /* SectionViewModels */,
+				EC2DF62C23B5DF4C007DB07E /* CellViewModels */,
+				ECCCD1BE23B5B5100047F1F6 /* MediaFeedViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -271,6 +457,7 @@
 		ECCCD14023B57B630047F1F6 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				ECCCD1D823B5C8E80047F1F6 /* LimitOffsetCalculatorService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -278,6 +465,7 @@
 		ECCCD14123B57B680047F1F6 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				ECFC55EE23B5CD1E00ECC0FD /* WebBasedMediaRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -285,6 +473,7 @@
 		ECCCD14223B57B6C0047F1F6 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				ECFC55F023B5CEC300ECC0FD /* SearchMediaUseCaseType.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -294,6 +483,7 @@
 			children = (
 				ECCCD14423B57B760047F1F6 /* Utils */,
 				ECCCD14623B57B7D0047F1F6 /* Enums */,
+				ECCCD1D523B5C8230047F1F6 /* Adapters */,
 				ECCCD15023B57BF00047F1F6 /* Factories */,
 				ECCCD15123B57BF30047F1F6 /* Strategies */,
 				ECCCD14723B57B7F0047F1F6 /* Protocols */,
@@ -306,6 +496,8 @@
 		ECCCD14423B57B760047F1F6 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				ECCCD1BA23B5AF7C0047F1F6 /* Commons.swift */,
+				EC2DF63E23B63780007DB07E /* ListSectionDataSource.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -314,6 +506,7 @@
 			isa = PBXGroup;
 			children = (
 				ECCCD18223B594AF0047F1F6 /* MediaType.swift */,
+				EC2DF63023B5E2BB007DB07E /* KindType.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -321,8 +514,13 @@
 		ECCCD14723B57B7F0047F1F6 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				ECCCD1D223B5C69B0047F1F6 /* UseCases */,
+				ECCCD1C923B5C04C0047F1F6 /* Repositories */,
+				ECCCD1B323B5ABE10047F1F6 /* Strategies */,
 				ECCCD17623B587A40047F1F6 /* Media.swift */,
 				ECCCD1AA23B5A6D80047F1F6 /* Coordinator.swift */,
+				ECCCD1BC23B5AF940047F1F6 /* ViewModelBindable.swift */,
+				ECCCD1C223B5B7340047F1F6 /* Model.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -330,17 +528,13 @@
 		ECCCD14823B57B830047F1F6 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				ECCCD14923B57B860047F1F6 /* Actions */,
-				ECCCD18A23B5A2FC0047F1F6 /* Codable+asDictionary.swift */,
+				EC2DF65123B63F8E007DB07E /* UIResponder+actions.swift */,
+				EC2DF63223B5E759007DB07E /* Sequence+grouping.swift */,
+				EC2DF64F23B63B6E007DB07E /* NSMutableAttributedString+helpers.swift */,
+				EC0650B223B669F900319F64 /* UIViewController+keyboardHandling.swift */,
+				EC0650C123B6788B00319F64 /* ScrollView+LoadMore.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		ECCCD14923B57B860047F1F6 /* Actions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Actions;
 			sourceTree = "<group>";
 		};
 		ECCCD14C23B57BB20047F1F6 /* Models */ = {
@@ -361,6 +555,7 @@
 			isa = PBXGroup;
 			children = (
 				ECCCD18823B5A18F0047F1F6 /* SearchRequestModel.swift */,
+				ECCCD1B823B5AE7C0047F1F6 /* PaginatedRequestModel.swift */,
 			);
 			path = RequestModels;
 			sourceTree = "<group>";
@@ -368,7 +563,8 @@
 		ECCCD14E23B57BB90047F1F6 /* ResponseModels */ = {
 			isa = PBXGroup;
 			children = (
-				ECCCD18623B59F5E0047F1F6 /* ResponseMediaModel.swift */,
+				ECCCD18623B59F5E0047F1F6 /* FullMediaModel.swift */,
+				ECCCD1C023B5B6D90047F1F6 /* ResponseModel.swift */,
 			);
 			path = ResponseModels;
 			sourceTree = "<group>";
@@ -384,6 +580,7 @@
 		ECCCD15023B57BF00047F1F6 /* Factories */ = {
 			isa = PBXGroup;
 			children = (
+				ECCCD1C723B5BE600047F1F6 /* FeedMediaFactory.swift */,
 			);
 			path = Factories;
 			sourceTree = "<group>";
@@ -391,6 +588,7 @@
 		ECCCD15123B57BF30047F1F6 /* Strategies */ = {
 			isa = PBXGroup;
 			children = (
+				ECFC55F223B5CFE400ECC0FD /* RestPaginationStrategy.swift */,
 			);
 			path = Strategies;
 			sourceTree = "<group>";
@@ -407,6 +605,9 @@
 		ECCCD15F23B57FB80047F1F6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ECCCD1CF23B5C13E0047F1F6 /* SkeletonView.framework */,
+				ECCCD1CC23B5C1390047F1F6 /* IGListDiffKit.framework */,
+				ECCCD1C423B5BC8D0047F1F6 /* Reusable.framework */,
 				ECCCD1A523B5A5920047F1F6 /* RxSwift.framework */,
 				ECCCD1A223B5A58D0047F1F6 /* RxMoya.framework */,
 				ECCCD19F23B5A5770047F1F6 /* RxRelay.framework */,
@@ -428,6 +629,9 @@
 				ECCCD16E23B585570047F1F6 /* ViewModelAssembly.swift */,
 				ECCCD17023B5856B0047F1F6 /* ViewControllerAssembly.swift */,
 				ECCCD17223B586090047F1F6 /* CoordinatorAssembly.swift */,
+				ECEC0B7F23B6512800D71F54 /* UtilsAssembly.swift */,
+				ECEC0B8123B651BC00D71F54 /* ServiceAssembly.swift */,
+				ECEC0B8423B6532100D71F54 /* FactoryAssembly.swift */,
 			);
 			path = Assamblers;
 			sourceTree = "<group>";
@@ -436,8 +640,70 @@
 			isa = PBXGroup;
 			children = (
 				ECCCD1B123B5A7C10047F1F6 /* MediaFeedViewController.swift */,
+				EC2DF63C23B6353F007DB07E /* MediaFeedViewControllerDelegate.swift */,
 			);
 			path = MediaFeedViewController;
+			sourceTree = "<group>";
+		};
+		ECCCD1B323B5ABE10047F1F6 /* Strategies */ = {
+			isa = PBXGroup;
+			children = (
+				ECCCD1B423B5ABF10047F1F6 /* PaginationStrategy.swift */,
+			);
+			path = Strategies;
+			sourceTree = "<group>";
+		};
+		ECCCD1C923B5C04C0047F1F6 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				ECCCD1CA23B5C0600047F1F6 /* MediaRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		ECCCD1D223B5C69B0047F1F6 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				ECCCD1D323B5C6B00047F1F6 /* SearchMediaUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		ECCCD1D523B5C8230047F1F6 /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				ECCCD1D623B5C85F0047F1F6 /* LimitOffsetBasedAdapter.swift */,
+			);
+			path = Adapters;
+			sourceTree = "<group>";
+		};
+		ECEC0B6623B6413000D71F54 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				EC0650B823B670D400319F64 /* EmptyStateCell */,
+				ECEC0B7623B64ACD00D71F54 /* MediaCell */,
+				ECEC0B6923B6415F00D71F54 /* EmptyCell.swift */,
+				EC0650BF23B677A900319F64 /* LoadingCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		ECEC0B6B23B6425D00D71F54 /* ActionableCollectionHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				ECEC0B6E23B6429A00D71F54 /* SectionTitleHeaderView.swift */,
+				ECEC0B6F23B6429A00D71F54 /* SectionTitleHeaderView.xib */,
+			);
+			path = ActionableCollectionHeaderView;
+			sourceTree = "<group>";
+		};
+		ECEC0B7623B64ACD00D71F54 /* MediaCell */ = {
+			isa = PBXGroup;
+			children = (
+				ECEC0B7723B64AE500D71F54 /* MediaCell.swift */,
+				ECEC0B7823B64AE500D71F54 /* MediaCell.xib */,
+			);
+			path = MediaCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -528,9 +794,13 @@
 			files = (
 				ECCCD15B23B57D530047F1F6 /* Localizable.strings in Resources */,
 				ECCCD15523B57C9D0047F1F6 /* Colors.xcassets in Resources */,
+				EC2DF64E23B63903007DB07E /* FeedHeaderView.xib in Resources */,
 				ECCCD12523B579BF0047F1F6 /* LaunchScreen.storyboard in Resources */,
 				ECCCD15723B57CAF0047F1F6 /* Icons.xcassets in Resources */,
 				ECCCD12223B579BF0047F1F6 /* Base.xcassets in Resources */,
+				EC0650BC23B670E900319F64 /* EmptyStateCell.xib in Resources */,
+				ECEC0B7A23B64AE500D71F54 /* MediaCell.xib in Resources */,
+				ECEC0B7123B6429A00D71F54 /* SectionTitleHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,6 +832,9 @@
 				"$(SRCROOT)/Carthage/Build/iOS/RxMoya.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxRelay.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Reusable.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/IGListKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SkeletonView.framework",
 			);
 			name = "Carthage Copy Frameworks";
 			outputFileListPaths = (
@@ -616,31 +889,75 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC0650BB23B670E900319F64 /* EmptyStateCell.swift in Sources */,
+				ECCCD1BB23B5AF7C0047F1F6 /* Commons.swift in Sources */,
+				ECCCD1D923B5C8E80047F1F6 /* LimitOffsetCalculatorService.swift in Sources */,
+				ECCCD1CB23B5C0600047F1F6 /* MediaRepository.swift in Sources */,
+				ECEC0B8223B651BC00D71F54 /* ServiceAssembly.swift in Sources */,
 				ECCCD18323B594AF0047F1F6 /* MediaType.swift in Sources */,
-				ECCCD18B23B5A2FC0047F1F6 /* Codable+asDictionary.swift in Sources */,
+				EC2DF64623B63876007DB07E /* EmptyHeaderView.swift in Sources */,
+				EC2DF63323B5E759007DB07E /* Sequence+grouping.swift in Sources */,
+				EC0650C423B67E4E00319F64 /* LoadingSectionController.swift in Sources */,
+				ECEC0B8523B6532100D71F54 /* FactoryAssembly.swift in Sources */,
+				EC2DF65223B63F8E007DB07E /* UIResponder+actions.swift in Sources */,
+				ECEC0B7323B6453D00D71F54 /* SectionedMediaSectionController.swift in Sources */,
+				ECCCD1BF23B5B5100047F1F6 /* MediaFeedViewModel.swift in Sources */,
 				ECCCD17B23B588B40047F1F6 /* MovieModel.swift in Sources */,
+				ECEC0B8023B6512800D71F54 /* UtilsAssembly.swift in Sources */,
+				EC2DF63B23B5F5AB007DB07E /* FeedHeaderViewModel.swift in Sources */,
+				ECCCD1D723B5C85F0047F1F6 /* LimitOffsetBasedAdapter.swift in Sources */,
 				ECCCD17323B586090047F1F6 /* CoordinatorAssembly.swift in Sources */,
-				ECCCD18723B59F5E0047F1F6 /* ResponseMediaModel.swift in Sources */,
+				ECCCD1B523B5ABF10047F1F6 /* PaginationStrategy.swift in Sources */,
+				ECCCD1B923B5AE7C0047F1F6 /* PaginatedRequestModel.swift in Sources */,
+				EC0650C223B6788B00319F64 /* ScrollView+LoadMore.swift in Sources */,
+				EC2DF63123B5E2BB007DB07E /* KindType.swift in Sources */,
+				EC2DF64C23B638FC007DB07E /* FeedHeaderView.swift in Sources */,
+				EC2DF64823B638D2007DB07E /* FeedHeaderReusableView.swift in Sources */,
+				ECCCD18723B59F5E0047F1F6 /* FullMediaModel.swift in Sources */,
 				ECCCD16F23B585570047F1F6 /* ViewModelAssembly.swift in Sources */,
+				EC2DF63523B5EBAB007DB07E /* MediaSectionViewModel.swift in Sources */,
+				EC2DF62F23B5DF81007DB07E /* SkeletonCellViewModel.swift in Sources */,
 				ECCCD1AB23B5A6D80047F1F6 /* Coordinator.swift in Sources */,
 				ECCCD17523B587800047F1F6 /* TvShowModel.swift in Sources */,
+				EC2DF64223B63817007DB07E /* FeedHeaderSectionController.swift in Sources */,
+				ECFC55EF23B5CD1E00ECC0FD /* WebBasedMediaRepository.swift in Sources */,
 				ECCCD11923B579BD0047F1F6 /* AppDelegate.swift in Sources */,
 				ECCCD18E23B5A4880047F1F6 /* R.swift in Sources */,
 				ECCCD1B223B5A7C10047F1F6 /* MediaFeedViewController.swift in Sources */,
+				EC0650B523B66FE200319F64 /* EmptyStateViewModel.swift in Sources */,
+				ECCCD1C123B5B6D90047F1F6 /* ResponseModel.swift in Sources */,
 				ECCCD17723B587A40047F1F6 /* Media.swift in Sources */,
+				EC2DF63923B5EDB5007DB07E /* LoadingCellViewModel.swift in Sources */,
 				ECCCD16B23B585070047F1F6 /* UseCaseAssembly.swift in Sources */,
 				ECCCD1AD23B5A6F70047F1F6 /* ApplicationCoordinator.swift in Sources */,
 				ECCCD1AF23B5A7920047F1F6 /* MediaFeedCoordinator.swift in Sources */,
 				ECCCD18F23B5A4880047F1F6 /* L10n.swift in Sources */,
+				ECCCD1D423B5C6B00047F1F6 /* SearchMediaUseCase.swift in Sources */,
 				ECCCD18923B5A18F0047F1F6 /* SearchRequestModel.swift in Sources */,
+				ECEC0B7523B6490000D71F54 /* MediaSectionController.swift in Sources */,
+				ECFC55F123B5CEC300ECC0FD /* SearchMediaUseCaseType.swift in Sources */,
+				ECEC0B7023B6429A00D71F54 /* SectionTitleHeaderView.swift in Sources */,
+				EC0650C023B677A900319F64 /* LoadingCell.swift in Sources */,
 				ECCCD16923B584C50047F1F6 /* Injector.swift in Sources */,
+				ECCCD1C323B5B7340047F1F6 /* Model.swift in Sources */,
 				ECCCD18523B59C930047F1F6 /* MediaProvider.swift in Sources */,
 				ECCCD14B23B57B8E0047F1F6 /* K.swift in Sources */,
 				ECCCD17D23B589EC0047F1F6 /* PodcastModel.swift in Sources */,
+				ECEC0B7D23B64D9000D71F54 /* SognCellViewModel.swift in Sources */,
+				EC2DF65023B63B6E007DB07E /* NSMutableAttributedString+helpers.swift in Sources */,
+				EC0650B323B669F900319F64 /* UIViewController+keyboardHandling.swift in Sources */,
+				ECEC0B6A23B6415F00D71F54 /* EmptyCell.swift in Sources */,
 				ECCCD17F23B58A9B0047F1F6 /* EbookModel.swift in Sources */,
+				ECFC55F323B5CFE400ECC0FD /* RestPaginationStrategy.swift in Sources */,
+				EC0650BE23B6728200319F64 /* EmptyStateSectionController.swift in Sources */,
 				ECCCD16D23B585190047F1F6 /* RepositoryAssembly.swift in Sources */,
 				ECCCD17923B5885E0047F1F6 /* SongModel.swift in Sources */,
+				ECCCD1BD23B5AF940047F1F6 /* ViewModelBindable.swift in Sources */,
 				ECCCD17123B5856B0047F1F6 /* ViewControllerAssembly.swift in Sources */,
+				EC2DF63D23B6353F007DB07E /* MediaFeedViewControllerDelegate.swift in Sources */,
+				ECEC0B7923B64AE500D71F54 /* MediaCell.swift in Sources */,
+				ECCCD1C823B5BE600047F1F6 /* FeedMediaFactory.swift in Sources */,
+				EC2DF63F23B63780007DB07E /* ListSectionDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -864,7 +1181,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ItunesMedia.app/ItunesMedia";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Itunes Media.app/Itunes Media";
 			};
 			name = Debug;
 		};
@@ -886,7 +1203,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ItunesMedia.app/ItunesMedia";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Itunes Media.app/Itunes Media";
 			};
 			name = Release;
 		};

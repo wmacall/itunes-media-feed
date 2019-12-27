@@ -1,4 +1,7 @@
 github "Alamofire/Alamofire" "5.0.0-rc.3"
+github "AliSoftware/Reusable" "4.1.0"
+github "Instagram/IGListKit" "4.0.0"
+github "Juanpe/SkeletonView" "1.8.2"
 github "Moya/Moya" "14.0.0-beta.6"
 github "ReactiveCocoa/ReactiveSwift" "6.1.0"
 github "ReactiveX/RxSwift" "5.0.1"

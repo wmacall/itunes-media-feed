@@ -9,6 +9,8 @@
 import Foundation
 
 struct MovieModel: Media, Decodable {
+    
+    let kindValue: String
     let trackId: Int
     let artistName: String
     let artworkUrl60: String
@@ -17,4 +19,9 @@ struct MovieModel: Media, Decodable {
     let primaryGenreName: String
     let collectionViewUrl: String
     let longDescription: String
+    
+    var kind: KindType? {
+        return KindType(rawValue: kindValue)
+    }
+    
 }

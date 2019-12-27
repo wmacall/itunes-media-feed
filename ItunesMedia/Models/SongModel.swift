@@ -8,7 +8,9 @@
 
 import Foundation
 
-struct SongModel: Media, Decodable {
+struct SongModel: Media, Decodable {    
+    
+    var kindValue: String
     let trackId: Int
     let artistName: String
     let artworkUrl60: String
@@ -17,4 +19,10 @@ struct SongModel: Media, Decodable {
     let primaryGenreName: String
     let collectionViewUrl: String
     let previewUrl: String
+    let artworkUrl100: String
+    
+    var kind: KindType? {
+        return KindType(rawValue: kindValue)
+    }
+    
 }

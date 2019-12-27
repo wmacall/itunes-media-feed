@@ -11,6 +11,14 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name
 internal enum L10n {
+  /// What do you\nwant to search?
+  internal static let homeHeaderTitle = L10n.tr("Localizable", "homeHeaderTitle")
+  /// Try adjusting your search to find what you are looking for
+  internal static let searchEmptyStateSubtitle = L10n.tr("Localizable", "searchEmptyStateSubtitle")
+  /// No results found
+  internal static let searchEmptyStateTitle = L10n.tr("Localizable", "searchEmptyStateTitle")
+  /// Section Placeholder
+  internal static let sectionTitlePlaceholder = L10n.tr("Localizable", "sectionTitlePlaceholder")
   /// All
   internal static let seeAll = L10n.tr("Localizable", "seeAll")
 }
