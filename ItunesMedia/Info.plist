@@ -41,5 +41,7 @@
 	</array>
 	<key>NSAppleMusicUsageDescription</key>
 	<string>For redirecting to stores</string>
+	<key>UIUserInterfaceStyle</key>
+	<string>Light</string>
 </dict>
 </plist>
