@@ -16,3 +16,9 @@
     * Add moya framework
     * Add media models
     * Add media moya provider
+
+## [ADD] 2019-12-26 20:55
+    * Add ApplicationCoordinator
+    * Add MediaFeedCoordinator
+    * Add container factory for coordinators and MediaFeedViewController
+    * Add MediaFeedViewController
