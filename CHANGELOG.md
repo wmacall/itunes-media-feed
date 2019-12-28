@@ -65,3 +65,6 @@
 ## [REFACTOR] 2019-12-27 21:35
     * Refactor KindType moving string literals to L10n
     * Remove trailing white spaces
+
+## [ADD] 2019-12-27 22:00
+    * Add screenshots for README.md
