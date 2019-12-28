@@ -15,3 +15,8 @@
 "genreTitle" = "Genre";
 "genresTitle" = "Genres";
 "descriptionTitle" = "Description";
+"podcastSectionTitle" = "Podcasts";
+"songsSectionTitle" = "Songs";
+"moviesSectionTitle" = "Movies";
+"ebooksSectionTitle" = "Ebooks";
+"showsSectionTitle" = "Shows";

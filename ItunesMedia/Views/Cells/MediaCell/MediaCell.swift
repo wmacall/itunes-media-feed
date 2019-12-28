@@ -55,8 +55,8 @@ extension MediaCell: ListBindable {
     func bindViewModel(_ viewModel: Any) {
         switch viewModel {
         case is SkeletonCellViewModel:
-            DispatchQueue.main.async { [unowned self] in
-                self.showAnimatedSkeleton()
+            DispatchQueue.main.async { [weak self] in
+                self?.showAnimatedSkeleton()
             }
             
         case let songCellViewModel as MediaCellViewModel:

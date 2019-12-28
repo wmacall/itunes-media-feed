@@ -17,7 +17,7 @@ final class TextBasedCellViewModelType: TextBasedCellViewModel {
     let content: String
     
     // MARK: - LifeCycle
-    
+
     init(title: String, content: String) {
         self.title = title
         self.content = content
@@ -42,4 +42,3 @@ extension TextBasedCellViewModelType: ListDiffable {
     }
     
 }
-

@@ -61,3 +61,7 @@
 
 ## [REFACTOR] 2019-12-27 18:56
     * Refactor CellViewModels to conform its viewModel protocol
+
+## [REFACTOR] 2019-12-27 21:35
+    * Refactor KindType moving string literals to L10n
+    * Remove trailing white spaces

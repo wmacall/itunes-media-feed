@@ -13,6 +13,8 @@ import Foundation
 internal enum L10n {
   /// Description
   internal static let descriptionTitle = L10n.tr("Localizable", "descriptionTitle")
+  /// Ebooks
+  internal static let ebooksSectionTitle = L10n.tr("Localizable", "ebooksSectionTitle")
   /// %@ %@
   internal static func genreList(_ p1: String, _ p2: String) -> String {
     return L10n.tr("Localizable", "genreList", p1, p2)
@@ -23,6 +25,10 @@ internal enum L10n {
   internal static let genreTitle = L10n.tr("Localizable", "genreTitle")
   /// What do you\nwant to search?
   internal static let homeHeaderTitle = L10n.tr("Localizable", "homeHeaderTitle")
+  /// Movies
+  internal static let moviesSectionTitle = L10n.tr("Localizable", "moviesSectionTitle")
+  /// Podcasts
+  internal static let podcastSectionTitle = L10n.tr("Localizable", "podcastSectionTitle")
   /// Try adjusting your search to find what you are looking for
   internal static let searchEmptyStateSubtitle = L10n.tr("Localizable", "searchEmptyStateSubtitle")
   /// No results found
@@ -31,6 +37,10 @@ internal enum L10n {
   internal static let sectionTitlePlaceholder = L10n.tr("Localizable", "sectionTitlePlaceholder")
   /// All
   internal static let seeAll = L10n.tr("Localizable", "seeAll")
+  /// Shows
+  internal static let showsSectionTitle = L10n.tr("Localizable", "showsSectionTitle")
+  /// Songs
+  internal static let songsSectionTitle = L10n.tr("Localizable", "songsSectionTitle")
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name

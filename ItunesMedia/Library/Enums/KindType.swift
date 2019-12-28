@@ -19,11 +19,11 @@ enum KindType: String {
 extension KindType {
     var title: String {
         switch self {
-        case .podcast: return "Podcasts"
-        case .song: return "Songs"
-        case .movie: return "Movies"
-        case .show: return "Shows"
-        case .ebook: return "Ebooks"
+        case .podcast: return L10n.podcastSectionTitle
+        case .song: return L10n.songsSectionTitle
+        case .movie: return L10n.moviesSectionTitle
+        case .show: return L10n.showsSectionTitle
+        case .ebook: return L10n.ebooksSectionTitle
         }
     }
 }

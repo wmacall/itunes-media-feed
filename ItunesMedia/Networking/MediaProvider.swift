@@ -41,7 +41,7 @@ extension MediaProvider: TargetType {
         switch self {
         case let .search(requestModel):
             parameters["term"] = requestModel.query ?? ""
-            
+           
             if let offset = requestModel.offset,
                 let limit = requestModel.limit {
                 parameters["offset"] = offset
@@ -52,7 +52,7 @@ extension MediaProvider: TargetType {
         return .requestParameters(parameters: parameters, encoding: URLEncoding.default)
     }
 
-    var headers: [String : String]? {
+    var headers: [String: String]? {
         return ["Accept": "application/json"]
     }
 }

@@ -7,8 +7,8 @@
 //
 
 import UIKit
-import Moya
 import Nuke
+import Moya
 
 // swiftlint:disable:next type_name
 enum K {

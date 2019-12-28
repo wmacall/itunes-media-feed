@@ -599,9 +599,9 @@
 				ECCCD1C923B5C04C0047F1F6 /* Repositories */,
 				ECCCD1B323B5ABE10047F1F6 /* Strategies */,
 				ECCCD17623B587A40047F1F6 /* Media.swift */,
+				ECCCD1C223B5B7340047F1F6 /* Model.swift */,
 				ECCCD1AA23B5A6D80047F1F6 /* Coordinator.swift */,
 				ECCCD1BC23B5AF940047F1F6 /* ViewModelBindable.swift */,
-				ECCCD1C223B5B7340047F1F6 /* Model.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -806,7 +806,6 @@
 				ECCCD11323B579BD0047F1F6 /* Resources */,
 				ECCCD16323B57FB80047F1F6 /* Embed Frameworks */,
 				ECCCD16423B580CE0047F1F6 /* Carthage Copy Frameworks */,
-				ECCCD16523B581E60047F1F6 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -932,25 +931,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
-		};
-		ECCCD16523B581E60047F1F6 /* SwiftLint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = SwiftLint;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "
-";
 		};
 		ECCCD16623B5823A0047F1F6 /* SwiftGen Assets Generation */ = {
 			isa = PBXShellScriptBuildPhase;

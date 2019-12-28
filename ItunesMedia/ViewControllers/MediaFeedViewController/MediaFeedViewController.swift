@@ -84,6 +84,7 @@ final class MediaFeedViewController: UIViewController {
         guard let viewModel = viewModel as? MediaCellViewModel
             else { return }
         
+        view.endEditing(true)
         delegate?.mediaFeedViewControllerDidSelectMedia(viewModel.model)
     }
     

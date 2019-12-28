@@ -9,24 +9,24 @@
 import IGListKit
 
 final class MediaDetailCellViewModelType: MediaDetailCellViewModel {
-    
+
     // MARK: - Attributes
-    
+
     let identifier: String
     let artworkUrl: String
     let title: String
     let subtitle: String
     let datetime: String
     let url: String
-    
+
     // MARK: - LifeCycle
-    
+
     init(artworkUrl: String,
          title: String,
          subtitle: String,
          datetime: String,
          url: String) {
-        
+
         self.artworkUrl = artworkUrl
         self.title = title
         self.subtitle = subtitle
@@ -34,7 +34,7 @@ final class MediaDetailCellViewModelType: MediaDetailCellViewModel {
         self.url = url
         identifier = UUID().uuidString
     }
-    
+
     // MARK: - Properties
     
     var imageURL: URL? {
@@ -65,7 +65,5 @@ extension MediaDetailCellViewModelType: ListDiffable {
         
         return identifier == object.identifier
     }
-    
+
 }
-
-
