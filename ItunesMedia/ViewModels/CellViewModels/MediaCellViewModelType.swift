@@ -1,5 +1,5 @@
 //
-//  MediaDetailCellViewModel.swift
+//  SognCellViewModel.swift
 //  ItunesMedia
 //
 //  Created by Gustavo Lopez on 12/27/19.
@@ -8,7 +8,7 @@
 
 import IGListKit
 
-final class MediaDetailCellViewModel {
+final class MediaCellViewModelType: MediaCellViewModel {
     
     // MARK: - Attributes
     
@@ -17,7 +17,7 @@ final class MediaDetailCellViewModel {
     let title: String
     let subtitle: String
     let datetime: String
-    let url: String
+    let model: Media
     
     // MARK: - LifeCycle
     
@@ -25,13 +25,13 @@ final class MediaDetailCellViewModel {
          title: String,
          subtitle: String,
          datetime: String,
-         url: String) {
+         model: Media) {
         
         self.artworkUrl = artworkUrl
         self.title = title
         self.subtitle = subtitle
         self.datetime = datetime
-        self.url = url
+        self.model = model
         identifier = UUID().uuidString
     }
     
@@ -41,31 +41,25 @@ final class MediaDetailCellViewModel {
         return URL(string: artworkUrl)
     }
     
-    var storeURL: URL? {
-        return URL(string: url)
-    }
-    
     var date: String {
         return datetime.toDate()?.mediaDateFormat() ?? datetime
     }
-
+    
 }
 
 // MARK: - ListDiffable
 
-extension MediaDetailCellViewModel: ListDiffable {
+extension MediaCellViewModelType: ListDiffable {
     
     func diffIdentifier() -> NSObjectProtocol {
         return identifier as NSObjectProtocol
     }
     
     func isEqual(toDiffableObject object: ListDiffable?) -> Bool {
-        guard let object = object as? MediaDetailCellViewModel
+        guard let object = object as? MediaCellViewModelType
             else { return false }
         
         return identifier == object.identifier
     }
     
 }
-
-

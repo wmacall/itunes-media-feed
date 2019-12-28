@@ -1,5 +1,5 @@
 //
-//  EmptyStateViewModel.swift
+//  LoadinCellViewModel.swift
 //  ItunesMedia
 //
 //  Created by Gustavo Lopez on 12/27/19.
@@ -8,7 +8,7 @@
 
 import IGListKit
 
-final class EmptyStateViewModel {
+final class LoadingCellViewModelType: LoadingCellViewModel {
     
     // MARK: - Attributes
     
@@ -20,32 +20,18 @@ final class EmptyStateViewModel {
         identifier = UUID().uuidString
     }
     
-    // MARK: - Properties
-    
-    var title: String {
-        return L10n.searchEmptyStateTitle
-    }
-    
-    var subtitle: String {
-        return L10n.searchEmptyStateSubtitle
-    }
-    
-    var imageName: String {
-        return "results"
-    }
-    
 }
 
 // MARK: - ListDiffable
 
-extension EmptyStateViewModel: ListDiffable {
+extension LoadingCellViewModelType: ListDiffable {
     
     func diffIdentifier() -> NSObjectProtocol {
         return identifier as NSObjectProtocol
     }
     
     func isEqual(toDiffableObject object: ListDiffable?) -> Bool {
-        guard let object = object as? EmptyStateViewModel
+        guard let object = object as? LoadingCellViewModelType
             else { return false }
         
         return identifier == object.identifier

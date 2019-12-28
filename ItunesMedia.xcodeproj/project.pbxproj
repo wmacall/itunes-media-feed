@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EC0650B323B669F900319F64 /* UIViewController+keyboardHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0650B223B669F900319F64 /* UIViewController+keyboardHandling.swift */; };
-		EC0650B523B66FE200319F64 /* EmptyStateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0650B423B66FE200319F64 /* EmptyStateViewModel.swift */; };
+		EC0650B523B66FE200319F64 /* EmptyStateViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0650B423B66FE200319F64 /* EmptyStateViewModelType.swift */; };
 		EC0650BB23B670E900319F64 /* EmptyStateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0650B923B670E900319F64 /* EmptyStateCell.swift */; };
 		EC0650BC23B670E900319F64 /* EmptyStateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC0650BA23B670E900319F64 /* EmptyStateCell.xib */; };
 		EC0650BE23B6728200319F64 /* EmptyStateSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0650BD23B6728200319F64 /* EmptyStateSectionController.swift */; };
@@ -22,17 +22,16 @@
 		EC0650D023B68D4500319F64 /* MediaContentFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0650CF23B68D4500319F64 /* MediaContentFactory.swift */; };
 		EC0650D423B68EE300319F64 /* MediaDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0650D223B68EE300319F64 /* MediaDetailCell.swift */; };
 		EC0650D523B68EE300319F64 /* MediaDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC0650D323B68EE300319F64 /* MediaDetailCell.xib */; };
-		EC0650D723B6905500319F64 /* MediaDetailCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0650D623B6905500319F64 /* MediaDetailCellViewModel.swift */; };
+		EC0650D723B6905500319F64 /* MediaDetailCellViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0650D623B6905500319F64 /* MediaDetailCellViewModelType.swift */; };
 		EC0650D923B6990B00319F64 /* ContentDetailSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0650D823B6990B00319F64 /* ContentDetailSectionController.swift */; };
-		EC0650DB23B69B3A00319F64 /* TextBasedCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0650DA23B69B3A00319F64 /* TextBasedCellViewModel.swift */; };
 		EC0650DD23B69B9800319F64 /* TextBasedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0650DC23B69B9800319F64 /* TextBasedCell.swift */; };
 		EC0650DF23B69D2100319F64 /* TextSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0650DE23B69D2100319F64 /* TextSize.swift */; };
 		EC0650E623B6B6C200319F64 /* UIView+pintToEdges.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0650E523B6B6C200319F64 /* UIView+pintToEdges.swift */; };
-		EC2DF62F23B5DF81007DB07E /* SkeletonCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2DF62E23B5DF81007DB07E /* SkeletonCellViewModel.swift */; };
+		EC2DF62F23B5DF81007DB07E /* SkeletonCellViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2DF62E23B5DF81007DB07E /* SkeletonCellViewModelType.swift */; };
 		EC2DF63123B5E2BB007DB07E /* KindType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2DF63023B5E2BB007DB07E /* KindType.swift */; };
 		EC2DF63323B5E759007DB07E /* Sequence+grouping.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2DF63223B5E759007DB07E /* Sequence+grouping.swift */; };
 		EC2DF63523B5EBAB007DB07E /* MediaSectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2DF63423B5EBAB007DB07E /* MediaSectionViewModel.swift */; };
-		EC2DF63923B5EDB5007DB07E /* LoadingCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2DF63823B5EDB5007DB07E /* LoadingCellViewModel.swift */; };
+		EC2DF63923B5EDB5007DB07E /* LoadingCellViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2DF63823B5EDB5007DB07E /* LoadingCellViewModelType.swift */; };
 		EC2DF63B23B5F5AB007DB07E /* FeedHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2DF63A23B5F5AB007DB07E /* FeedHeaderViewModel.swift */; };
 		EC2DF63D23B6353F007DB07E /* MediaFeedViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2DF63C23B6353F007DB07E /* MediaFeedViewControllerDelegate.swift */; };
 		EC2DF63F23B63780007DB07E /* ListSectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2DF63E23B63780007DB07E /* ListSectionDataSource.swift */; };
@@ -44,6 +43,14 @@
 		EC2DF65023B63B6E007DB07E /* NSMutableAttributedString+helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2DF64F23B63B6E007DB07E /* NSMutableAttributedString+helpers.swift */; };
 		EC2DF65223B63F8E007DB07E /* UIResponder+actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2DF65123B63F8E007DB07E /* UIResponder+actions.swift */; };
 		EC2FBF2423B6CE580015AF68 /* Date+formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2FBF2323B6CE580015AF68 /* Date+formatters.swift */; };
+		EC2FBF2623B6D3EF0015AF68 /* MediaFeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2FBF2523B6D3EF0015AF68 /* MediaFeedViewModel.swift */; };
+		EC2FBF2823B6D5FB0015AF68 /* MediaCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2FBF2723B6D5FB0015AF68 /* MediaCellViewModel.swift */; };
+		EC2FBF2A23B6D6E20015AF68 /* MediaDetailCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2FBF2923B6D6E20015AF68 /* MediaDetailCellViewModel.swift */; };
+		EC2FBF2E23B6D8170015AF68 /* TextBasedCellViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2FBF2D23B6D8170015AF68 /* TextBasedCellViewModelType.swift */; };
+		EC2FBF3023B6D82C0015AF68 /* TextBasedCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2FBF2F23B6D82C0015AF68 /* TextBasedCellViewModel.swift */; };
+		EC2FBF3223B6DA130015AF68 /* SkeletonCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2FBF3123B6DA130015AF68 /* SkeletonCellViewModel.swift */; };
+		EC2FBF3423B6DA5A0015AF68 /* LoadingCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2FBF3323B6DA5A0015AF68 /* LoadingCellViewModel.swift */; };
+		EC2FBF3623B6DB7D0015AF68 /* EmptyStateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2FBF3523B6DB7D0015AF68 /* EmptyStateViewModel.swift */; };
 		ECCCD11923B579BD0047F1F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD11823B579BD0047F1F6 /* AppDelegate.swift */; };
 		ECCCD12223B579BF0047F1F6 /* Base.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECCCD12123B579BF0047F1F6 /* Base.xcassets */; };
 		ECCCD12523B579BF0047F1F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECCCD12323B579BF0047F1F6 /* LaunchScreen.storyboard */; };
@@ -96,7 +103,7 @@
 		ECCCD1B923B5AE7C0047F1F6 /* PaginatedRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD1B823B5AE7C0047F1F6 /* PaginatedRequestModel.swift */; };
 		ECCCD1BB23B5AF7C0047F1F6 /* Commons.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD1BA23B5AF7C0047F1F6 /* Commons.swift */; };
 		ECCCD1BD23B5AF940047F1F6 /* ViewModelBindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD1BC23B5AF940047F1F6 /* ViewModelBindable.swift */; };
-		ECCCD1BF23B5B5100047F1F6 /* MediaFeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD1BE23B5B5100047F1F6 /* MediaFeedViewModel.swift */; };
+		ECCCD1BF23B5B5100047F1F6 /* MediaFeedViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD1BE23B5B5100047F1F6 /* MediaFeedViewModelType.swift */; };
 		ECCCD1C123B5B6D90047F1F6 /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD1C023B5B6D90047F1F6 /* ResponseModel.swift */; };
 		ECCCD1C323B5B7340047F1F6 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD1C223B5B7340047F1F6 /* Model.swift */; };
 		ECCCD1C523B5BC8D0047F1F6 /* Reusable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECCCD1C423B5BC8D0047F1F6 /* Reusable.framework */; };
@@ -117,7 +124,7 @@
 		ECEC0B7523B6490000D71F54 /* MediaSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEC0B7423B6490000D71F54 /* MediaSectionController.swift */; };
 		ECEC0B7923B64AE500D71F54 /* MediaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEC0B7723B64AE500D71F54 /* MediaCell.swift */; };
 		ECEC0B7A23B64AE500D71F54 /* MediaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECEC0B7823B64AE500D71F54 /* MediaCell.xib */; };
-		ECEC0B7D23B64D9000D71F54 /* MediaCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEC0B7C23B64D9000D71F54 /* MediaCellViewModel.swift */; };
+		ECEC0B7D23B64D9000D71F54 /* MediaCellViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEC0B7C23B64D9000D71F54 /* MediaCellViewModelType.swift */; };
 		ECEC0B8023B6512800D71F54 /* UtilsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEC0B7F23B6512800D71F54 /* UtilsAssembly.swift */; };
 		ECEC0B8223B651BC00D71F54 /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEC0B8123B651BC00D71F54 /* ServiceAssembly.swift */; };
 		ECEC0B8523B6532100D71F54 /* FactoryAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECEC0B8423B6532100D71F54 /* FactoryAssembly.swift */; };
@@ -163,7 +170,7 @@
 
 /* Begin PBXFileReference section */
 		EC0650B223B669F900319F64 /* UIViewController+keyboardHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+keyboardHandling.swift"; sourceTree = "<group>"; };
-		EC0650B423B66FE200319F64 /* EmptyStateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateViewModel.swift; sourceTree = "<group>"; };
+		EC0650B423B66FE200319F64 /* EmptyStateViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateViewModelType.swift; sourceTree = "<group>"; };
 		EC0650B923B670E900319F64 /* EmptyStateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateCell.swift; sourceTree = "<group>"; };
 		EC0650BA23B670E900319F64 /* EmptyStateCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyStateCell.xib; sourceTree = "<group>"; };
 		EC0650BD23B6728200319F64 /* EmptyStateSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateSectionController.swift; sourceTree = "<group>"; };
@@ -177,17 +184,16 @@
 		EC0650CF23B68D4500319F64 /* MediaContentFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaContentFactory.swift; sourceTree = "<group>"; };
 		EC0650D223B68EE300319F64 /* MediaDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaDetailCell.swift; sourceTree = "<group>"; };
 		EC0650D323B68EE300319F64 /* MediaDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MediaDetailCell.xib; sourceTree = "<group>"; };
-		EC0650D623B6905500319F64 /* MediaDetailCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaDetailCellViewModel.swift; sourceTree = "<group>"; };
+		EC0650D623B6905500319F64 /* MediaDetailCellViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaDetailCellViewModelType.swift; sourceTree = "<group>"; };
 		EC0650D823B6990B00319F64 /* ContentDetailSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentDetailSectionController.swift; sourceTree = "<group>"; };
-		EC0650DA23B69B3A00319F64 /* TextBasedCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBasedCellViewModel.swift; sourceTree = "<group>"; };
 		EC0650DC23B69B9800319F64 /* TextBasedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBasedCell.swift; sourceTree = "<group>"; };
 		EC0650DE23B69D2100319F64 /* TextSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSize.swift; sourceTree = "<group>"; };
 		EC0650E523B6B6C200319F64 /* UIView+pintToEdges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+pintToEdges.swift"; sourceTree = "<group>"; };
-		EC2DF62E23B5DF81007DB07E /* SkeletonCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonCellViewModel.swift; sourceTree = "<group>"; };
+		EC2DF62E23B5DF81007DB07E /* SkeletonCellViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonCellViewModelType.swift; sourceTree = "<group>"; };
 		EC2DF63023B5E2BB007DB07E /* KindType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KindType.swift; sourceTree = "<group>"; };
 		EC2DF63223B5E759007DB07E /* Sequence+grouping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+grouping.swift"; sourceTree = "<group>"; };
 		EC2DF63423B5EBAB007DB07E /* MediaSectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaSectionViewModel.swift; sourceTree = "<group>"; };
-		EC2DF63823B5EDB5007DB07E /* LoadingCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingCellViewModel.swift; sourceTree = "<group>"; };
+		EC2DF63823B5EDB5007DB07E /* LoadingCellViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingCellViewModelType.swift; sourceTree = "<group>"; };
 		EC2DF63A23B5F5AB007DB07E /* FeedHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedHeaderViewModel.swift; sourceTree = "<group>"; };
 		EC2DF63C23B6353F007DB07E /* MediaFeedViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaFeedViewControllerDelegate.swift; sourceTree = "<group>"; };
 		EC2DF63E23B63780007DB07E /* ListSectionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSectionDataSource.swift; sourceTree = "<group>"; };
@@ -199,6 +205,14 @@
 		EC2DF64F23B63B6E007DB07E /* NSMutableAttributedString+helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+helpers.swift"; sourceTree = "<group>"; };
 		EC2DF65123B63F8E007DB07E /* UIResponder+actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIResponder+actions.swift"; sourceTree = "<group>"; };
 		EC2FBF2323B6CE580015AF68 /* Date+formatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+formatters.swift"; sourceTree = "<group>"; };
+		EC2FBF2523B6D3EF0015AF68 /* MediaFeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaFeedViewModel.swift; sourceTree = "<group>"; };
+		EC2FBF2723B6D5FB0015AF68 /* MediaCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaCellViewModel.swift; sourceTree = "<group>"; };
+		EC2FBF2923B6D6E20015AF68 /* MediaDetailCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaDetailCellViewModel.swift; sourceTree = "<group>"; };
+		EC2FBF2D23B6D8170015AF68 /* TextBasedCellViewModelType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextBasedCellViewModelType.swift; sourceTree = "<group>"; };
+		EC2FBF2F23B6D82C0015AF68 /* TextBasedCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBasedCellViewModel.swift; sourceTree = "<group>"; };
+		EC2FBF3123B6DA130015AF68 /* SkeletonCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonCellViewModel.swift; sourceTree = "<group>"; };
+		EC2FBF3323B6DA5A0015AF68 /* LoadingCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingCellViewModel.swift; sourceTree = "<group>"; };
+		EC2FBF3523B6DB7D0015AF68 /* EmptyStateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateViewModel.swift; sourceTree = "<group>"; };
 		ECCCD11523B579BD0047F1F6 /* Itunes Media.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Itunes Media.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECCCD11823B579BD0047F1F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECCCD12123B579BF0047F1F6 /* Base.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Base.xcassets; sourceTree = "<group>"; };
@@ -248,7 +262,7 @@
 		ECCCD1B823B5AE7C0047F1F6 /* PaginatedRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginatedRequestModel.swift; sourceTree = "<group>"; };
 		ECCCD1BA23B5AF7C0047F1F6 /* Commons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commons.swift; sourceTree = "<group>"; };
 		ECCCD1BC23B5AF940047F1F6 /* ViewModelBindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelBindable.swift; sourceTree = "<group>"; };
-		ECCCD1BE23B5B5100047F1F6 /* MediaFeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaFeedViewModel.swift; sourceTree = "<group>"; };
+		ECCCD1BE23B5B5100047F1F6 /* MediaFeedViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaFeedViewModelType.swift; sourceTree = "<group>"; };
 		ECCCD1C023B5B6D90047F1F6 /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
 		ECCCD1C223B5B7340047F1F6 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		ECCCD1C423B5BC8D0047F1F6 /* Reusable.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reusable.framework; path = Carthage/Build/iOS/Reusable.framework; sourceTree = "<group>"; };
@@ -266,7 +280,7 @@
 		ECEC0B7423B6490000D71F54 /* MediaSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaSectionController.swift; sourceTree = "<group>"; };
 		ECEC0B7723B64AE500D71F54 /* MediaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaCell.swift; sourceTree = "<group>"; };
 		ECEC0B7823B64AE500D71F54 /* MediaCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MediaCell.xib; sourceTree = "<group>"; };
-		ECEC0B7C23B64D9000D71F54 /* MediaCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaCellViewModel.swift; sourceTree = "<group>"; };
+		ECEC0B7C23B64D9000D71F54 /* MediaCellViewModelType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaCellViewModelType.swift; sourceTree = "<group>"; };
 		ECEC0B7F23B6512800D71F54 /* UtilsAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilsAssembly.swift; sourceTree = "<group>"; };
 		ECEC0B8123B651BC00D71F54 /* ServiceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAssembly.swift; sourceTree = "<group>"; };
 		ECEC0B8423B6532100D71F54 /* FactoryAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryAssembly.swift; sourceTree = "<group>"; };
@@ -326,6 +340,13 @@
 			isa = PBXGroup;
 			children = (
 				EC0650C923B68B0900319F64 /* MediaContentViewModel.swift */,
+				EC2FBF2523B6D3EF0015AF68 /* MediaFeedViewModel.swift */,
+				EC2FBF2723B6D5FB0015AF68 /* MediaCellViewModel.swift */,
+				EC2FBF2923B6D6E20015AF68 /* MediaDetailCellViewModel.swift */,
+				EC2FBF2F23B6D82C0015AF68 /* TextBasedCellViewModel.swift */,
+				EC2FBF3123B6DA130015AF68 /* SkeletonCellViewModel.swift */,
+				EC2FBF3323B6DA5A0015AF68 /* LoadingCellViewModel.swift */,
+				EC2FBF3523B6DB7D0015AF68 /* EmptyStateViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -342,12 +363,12 @@
 		EC2DF62C23B5DF4C007DB07E /* CellViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				ECEC0B7C23B64D9000D71F54 /* MediaCellViewModel.swift */,
-				EC2DF62E23B5DF81007DB07E /* SkeletonCellViewModel.swift */,
-				EC2DF63823B5EDB5007DB07E /* LoadingCellViewModel.swift */,
-				EC0650B423B66FE200319F64 /* EmptyStateViewModel.swift */,
-				EC0650D623B6905500319F64 /* MediaDetailCellViewModel.swift */,
-				EC0650DA23B69B3A00319F64 /* TextBasedCellViewModel.swift */,
+				EC2FBF2D23B6D8170015AF68 /* TextBasedCellViewModelType.swift */,
+				ECEC0B7C23B64D9000D71F54 /* MediaCellViewModelType.swift */,
+				EC0650D623B6905500319F64 /* MediaDetailCellViewModelType.swift */,
+				EC2DF62E23B5DF81007DB07E /* SkeletonCellViewModelType.swift */,
+				EC2DF63823B5EDB5007DB07E /* LoadingCellViewModelType.swift */,
+				EC0650B423B66FE200319F64 /* EmptyStateViewModelType.swift */,
 			);
 			path = CellViewModels;
 			sourceTree = "<group>";
@@ -506,7 +527,7 @@
 			children = (
 				EC2DF62D23B5DF5C007DB07E /* SectionViewModels */,
 				EC2DF62C23B5DF4C007DB07E /* CellViewModels */,
-				ECCCD1BE23B5B5100047F1F6 /* MediaFeedViewModel.swift */,
+				ECCCD1BE23B5B5100047F1F6 /* MediaFeedViewModelType.swift */,
 				EC0650CB23B68B2F00319F64 /* MediaContentViewModelType.swift */,
 			);
 			path = ViewModels;
@@ -961,6 +982,7 @@
 				ECCCD1BB23B5AF7C0047F1F6 /* Commons.swift in Sources */,
 				ECCCD1D923B5C8E80047F1F6 /* LimitOffsetCalculatorService.swift in Sources */,
 				ECCCD1CB23B5C0600047F1F6 /* MediaRepository.swift in Sources */,
+				EC2FBF2623B6D3EF0015AF68 /* MediaFeedViewModel.swift in Sources */,
 				ECEC0B8223B651BC00D71F54 /* ServiceAssembly.swift in Sources */,
 				EC0650CC23B68B2F00319F64 /* MediaContentViewModelType.swift in Sources */,
 				ECCCD18323B594AF0047F1F6 /* MediaType.swift in Sources */,
@@ -970,9 +992,12 @@
 				ECEC0B8523B6532100D71F54 /* FactoryAssembly.swift in Sources */,
 				EC2DF65223B63F8E007DB07E /* UIResponder+actions.swift in Sources */,
 				EC2FBF2423B6CE580015AF68 /* Date+formatters.swift in Sources */,
+				EC2FBF2823B6D5FB0015AF68 /* MediaCellViewModel.swift in Sources */,
 				ECEC0B7323B6453D00D71F54 /* SectionedMediaSectionController.swift in Sources */,
-				ECCCD1BF23B5B5100047F1F6 /* MediaFeedViewModel.swift in Sources */,
+				EC2FBF3223B6DA130015AF68 /* SkeletonCellViewModel.swift in Sources */,
+				ECCCD1BF23B5B5100047F1F6 /* MediaFeedViewModelType.swift in Sources */,
 				EC0650E623B6B6C200319F64 /* UIView+pintToEdges.swift in Sources */,
+				EC2FBF2A23B6D6E20015AF68 /* MediaDetailCellViewModel.swift in Sources */,
 				EC0650DD23B69B9800319F64 /* TextBasedCell.swift in Sources */,
 				ECCCD17B23B588B40047F1F6 /* MovieModel.swift in Sources */,
 				ECEC0B8023B6512800D71F54 /* UtilsAssembly.swift in Sources */,
@@ -983,13 +1008,15 @@
 				ECCCD1B523B5ABF10047F1F6 /* PaginationStrategy.swift in Sources */,
 				ECCCD1B923B5AE7C0047F1F6 /* PaginatedRequestModel.swift in Sources */,
 				EC0650C223B6788B00319F64 /* ScrollView+LoadMore.swift in Sources */,
+				EC2FBF3623B6DB7D0015AF68 /* EmptyStateViewModel.swift in Sources */,
 				EC2DF63123B5E2BB007DB07E /* KindType.swift in Sources */,
 				EC2DF64C23B638FC007DB07E /* FeedHeaderView.swift in Sources */,
 				EC2DF64823B638D2007DB07E /* FeedHeaderReusableView.swift in Sources */,
 				ECCCD18723B59F5E0047F1F6 /* FullMediaModel.swift in Sources */,
 				ECCCD16F23B585570047F1F6 /* ViewModelAssembly.swift in Sources */,
 				EC2DF63523B5EBAB007DB07E /* MediaSectionViewModel.swift in Sources */,
-				EC2DF62F23B5DF81007DB07E /* SkeletonCellViewModel.swift in Sources */,
+				EC2FBF2E23B6D8170015AF68 /* TextBasedCellViewModelType.swift in Sources */,
+				EC2DF62F23B5DF81007DB07E /* SkeletonCellViewModelType.swift in Sources */,
 				ECCCD1AB23B5A6D80047F1F6 /* Coordinator.swift in Sources */,
 				ECCCD17523B587800047F1F6 /* TvShowModel.swift in Sources */,
 				EC2DF64223B63817007DB07E /* FeedHeaderSectionController.swift in Sources */,
@@ -997,31 +1024,32 @@
 				ECCCD11923B579BD0047F1F6 /* AppDelegate.swift in Sources */,
 				ECCCD18E23B5A4880047F1F6 /* R.swift in Sources */,
 				ECCCD1B223B5A7C10047F1F6 /* MediaFeedViewController.swift in Sources */,
-				EC0650B523B66FE200319F64 /* EmptyStateViewModel.swift in Sources */,
+				EC0650B523B66FE200319F64 /* EmptyStateViewModelType.swift in Sources */,
 				ECCCD1C123B5B6D90047F1F6 /* ResponseModel.swift in Sources */,
 				EC0650DF23B69D2100319F64 /* TextSize.swift in Sources */,
 				ECCCD17723B587A40047F1F6 /* Media.swift in Sources */,
-				EC2DF63923B5EDB5007DB07E /* LoadingCellViewModel.swift in Sources */,
+				EC2DF63923B5EDB5007DB07E /* LoadingCellViewModelType.swift in Sources */,
 				ECCCD16B23B585070047F1F6 /* UseCaseAssembly.swift in Sources */,
 				ECCCD1AD23B5A6F70047F1F6 /* ApplicationCoordinator.swift in Sources */,
 				ECCCD1AF23B5A7920047F1F6 /* MediaFeedCoordinator.swift in Sources */,
 				ECCCD18F23B5A4880047F1F6 /* L10n.swift in Sources */,
 				ECCCD1D423B5C6B00047F1F6 /* SearchMediaUseCase.swift in Sources */,
-				EC0650DB23B69B3A00319F64 /* TextBasedCellViewModel.swift in Sources */,
 				ECCCD18923B5A18F0047F1F6 /* SearchRequestModel.swift in Sources */,
 				ECEC0B7523B6490000D71F54 /* MediaSectionController.swift in Sources */,
 				ECFC55F123B5CEC300ECC0FD /* SearchMediaUseCaseType.swift in Sources */,
 				ECEC0B7023B6429A00D71F54 /* SectionTitleHeaderView.swift in Sources */,
 				EC0650CE23B68BEB00319F64 /* UICollectionView+default.swift in Sources */,
 				EC0650C023B677A900319F64 /* LoadingCell.swift in Sources */,
+				EC2FBF3023B6D82C0015AF68 /* TextBasedCellViewModel.swift in Sources */,
 				ECCCD16923B584C50047F1F6 /* Injector.swift in Sources */,
 				ECCCD1C323B5B7340047F1F6 /* Model.swift in Sources */,
 				ECCCD18523B59C930047F1F6 /* MediaProvider.swift in Sources */,
-				EC0650D723B6905500319F64 /* MediaDetailCellViewModel.swift in Sources */,
+				EC0650D723B6905500319F64 /* MediaDetailCellViewModelType.swift in Sources */,
 				ECCCD14B23B57B8E0047F1F6 /* K.swift in Sources */,
 				ECCCD17D23B589EC0047F1F6 /* PodcastModel.swift in Sources */,
 				EC0650D923B6990B00319F64 /* ContentDetailSectionController.swift in Sources */,
-				ECEC0B7D23B64D9000D71F54 /* MediaCellViewModel.swift in Sources */,
+				ECEC0B7D23B64D9000D71F54 /* MediaCellViewModelType.swift in Sources */,
+				EC2FBF3423B6DA5A0015AF68 /* LoadingCellViewModel.swift in Sources */,
 				EC2DF65023B63B6E007DB07E /* NSMutableAttributedString+helpers.swift in Sources */,
 				EC0650B323B669F900319F64 /* UIViewController+keyboardHandling.swift in Sources */,
 				ECEC0B6A23B6415F00D71F54 /* EmptyCell.swift in Sources */,

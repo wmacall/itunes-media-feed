@@ -10,7 +10,7 @@ import RxSwift
 import RxCocoa
 import IGListKit
 
-final class MediaFeedViewModel {
+final class MediaFeedViewModelType: MediaFeedViewModel {
 
     // MARK: - Attributes
 

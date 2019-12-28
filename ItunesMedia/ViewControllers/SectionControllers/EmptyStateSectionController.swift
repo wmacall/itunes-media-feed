@@ -12,12 +12,12 @@ final class EmptyStateSectionController: ListSectionController {
     
     // MARK: - Attributes
     
-    var viewModel: EmptyStateViewModel?
+    var viewModel: EmptyStateViewModelType?
     
     // MARK: - LifeCycle
     
     override func didUpdate(to object: Any) {
-        viewModel = object as? EmptyStateViewModel
+        viewModel = object as? EmptyStateViewModelType
     }
     
     override func sizeForItem(at index: Int) -> CGSize {

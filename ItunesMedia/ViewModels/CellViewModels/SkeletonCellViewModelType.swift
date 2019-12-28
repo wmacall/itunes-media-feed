@@ -8,7 +8,7 @@
 
 import IGListKit
 
-final class SkeletonCellViewModel {
+final class SkeletonCellViewModelType: SkeletonCellViewModel {
     
     // MARK: - Attributes
     
@@ -24,14 +24,14 @@ final class SkeletonCellViewModel {
 
 // MARK: - ListDiffable
 
-extension SkeletonCellViewModel: ListDiffable {
+extension SkeletonCellViewModelType: ListDiffable {
     
     func diffIdentifier() -> NSObjectProtocol {
         return identifier as NSObjectProtocol
     }
     
     func isEqual(toDiffableObject object: ListDiffable?) -> Bool {
-        guard let object = object as? SkeletonCellViewModel
+        guard let object = object as? SkeletonCellViewModelType
             else { return false }
         
         return identifier == object.identifier
@@ -39,10 +39,10 @@ extension SkeletonCellViewModel: ListDiffable {
     
 }
 
-extension SkeletonCellViewModel {
+extension SkeletonCellViewModelType {
     
-    static func skeletonModels(count: Int) -> [SkeletonCellViewModel] {
-        var models: [SkeletonCellViewModel] = []
+    static func skeletonModels(count: Int) -> [SkeletonCellViewModelType] {
+        var models: [SkeletonCellViewModelType] = []
         for _ in 0..<count {
             models.append(.init())
         }

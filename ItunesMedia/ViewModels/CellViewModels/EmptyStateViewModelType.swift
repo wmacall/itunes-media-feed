@@ -1,5 +1,5 @@
 //
-//  TextBasedCellViewModel.swift
+//  EmptyStateViewModel.swift
 //  ItunesMedia
 //
 //  Created by Gustavo Lopez on 12/27/19.
@@ -8,38 +8,47 @@
 
 import IGListKit
 
-final class TextBasedCellViewModel {
+final class EmptyStateViewModelType: EmptyStateViewModel {
     
     // MARK: - Attributes
     
     let identifier: String
-    let title: String
-    let content: String
     
     // MARK: - LifeCycle
     
-    init(title: String, content: String) {
-        self.title = title
-        self.content = content
+    init() {
         identifier = UUID().uuidString
+    }
+    
+    // MARK: - Properties
+    
+    var title: String {
+        return L10n.searchEmptyStateTitle
+    }
+    
+    var subtitle: String {
+        return L10n.searchEmptyStateSubtitle
+    }
+    
+    var imageName: String {
+        return "results"
     }
     
 }
 
 // MARK: - ListDiffable
 
-extension TextBasedCellViewModel: ListDiffable {
+extension EmptyStateViewModelType: ListDiffable {
     
     func diffIdentifier() -> NSObjectProtocol {
         return identifier as NSObjectProtocol
     }
     
     func isEqual(toDiffableObject object: ListDiffable?) -> Bool {
-        guard let object = object as? TextBasedCellViewModel
+        guard let object = object as? EmptyStateViewModelType
             else { return false }
         
         return identifier == object.identifier
     }
     
 }
-
