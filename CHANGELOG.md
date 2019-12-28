@@ -58,3 +58,6 @@
 
 ## [ADD] 2019-12-27 17:56
     * Add date default date formats
+
+## [REFACTOR] 2019-12-27 18:56
+    * Refactor CellViewModels to conform its viewModel protocol

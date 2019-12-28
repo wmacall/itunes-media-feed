@@ -122,7 +122,7 @@ final class FeedMediaFactory {
     func cellViewModel(from media: Media) -> ListDiffable? {
         switch media {
         case let songModel as SongModel:
-            return MediaCellViewModel(
+            return MediaCellViewModelType(
                 artworkUrl: songModel.artworkUrl100,
                 title: songModel.trackName,
                 subtitle: songModel.artistName,
@@ -131,7 +131,7 @@ final class FeedMediaFactory {
             )
             
         case let movieModel as MovieModel:
-            return MediaCellViewModel(
+            return MediaCellViewModelType(
                 artworkUrl: movieModel.artworkUrl60,
                 title: movieModel.trackName,
                 subtitle: movieModel.artistName,
@@ -140,7 +140,7 @@ final class FeedMediaFactory {
             )
             
         case let podcastModel as PodcastModel:
-            return MediaCellViewModel(
+            return MediaCellViewModelType(
                 artworkUrl: podcastModel.artworkUrl600,
                 title: podcastModel.trackName,
                 subtitle: podcastModel.artistName,
@@ -149,7 +149,7 @@ final class FeedMediaFactory {
             )
             
         case let tvShowModel as TvShowModel:
-            return MediaCellViewModel(
+            return MediaCellViewModelType(
                 artworkUrl: tvShowModel.artworkUrl60,
                 title: tvShowModel.collectionName,
                 subtitle: tvShowModel.artistName,
@@ -158,7 +158,7 @@ final class FeedMediaFactory {
             )
             
         case let ebookModel as EbookModel:
-            return MediaCellViewModel(
+            return MediaCellViewModelType(
                 artworkUrl: ebookModel.artworkUrl60,
                 title: ebookModel.trackName,
                 subtitle: ebookModel.artistName,
@@ -172,7 +172,7 @@ final class FeedMediaFactory {
     
     func sections(with models: [Media], skeletonModels: Bool, loadingIndicator: Bool) -> [ListDiffable] {
         if skeletonModels {
-            return SkeletonCellViewModel.skeletonSections(count: 3)
+            return SkeletonCellViewModelType.skeletonSections(count: 3)
         }
         
         var mediaModels = models.compactMap { [unowned self] model in
@@ -188,11 +188,11 @@ final class FeedMediaFactory {
             }
         
         if loadingIndicator {
-            mediaModels.append(LoadingCellViewModel())
+            mediaModels.append(LoadingCellViewModelType())
         }
         
         if mediaModels.count == 0 {
-            mediaModels.append(EmptyStateViewModel())
+            mediaModels.append(EmptyStateViewModelType())
         }
         
         return mediaModels

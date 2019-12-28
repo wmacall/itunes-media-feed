@@ -13,7 +13,7 @@ final class MediaContentFactory {
     func content(from model: Media) -> [ListDiffable] {
         switch model {
         case let songModel as SongModel:
-            let mediaDetailCellViewModel = MediaDetailCellViewModel(
+            let mediaDetailCellViewModel = MediaDetailCellViewModelType(
                 artworkUrl: songModel.artworkUrl100,
                 title: songModel.trackName,
                 subtitle: songModel.artistName,
@@ -21,7 +21,7 @@ final class MediaContentFactory {
                 url: songModel.collectionViewUrl
             )
             
-            let genre = TextBasedCellViewModel(
+            let genre = TextBasedCellViewModelType(
                 title: L10n.genreTitle,
                 content: songModel.primaryGenreName
             )
@@ -29,7 +29,7 @@ final class MediaContentFactory {
             return [mediaDetailCellViewModel, genre]
             
         case let movieModel as MovieModel:
-            let mediaDetailCellViewModel = MediaDetailCellViewModel(
+            let mediaDetailCellViewModel = MediaDetailCellViewModelType(
                 artworkUrl: movieModel.artworkUrl60,
                 title: movieModel.trackName,
                 subtitle: movieModel.artistName,
@@ -37,12 +37,12 @@ final class MediaContentFactory {
                 url: movieModel.collectionViewUrl
             )
             
-            let genre = TextBasedCellViewModel(
+            let genre = TextBasedCellViewModelType(
                 title: L10n.genreTitle,
                 content:  movieModel.primaryGenreName
             )
             
-            let description = TextBasedCellViewModel(
+            let description = TextBasedCellViewModelType(
                 title: L10n.descriptionTitle,
                 content: movieModel.longDescription
             )
@@ -50,7 +50,7 @@ final class MediaContentFactory {
             return [mediaDetailCellViewModel, genre, description]
             
         case let podcastModel as PodcastModel:
-            let mediaDetailCellViewModel = MediaDetailCellViewModel(
+            let mediaDetailCellViewModel = MediaDetailCellViewModelType(
                 artworkUrl: podcastModel.artworkUrl600,
                 title: podcastModel.trackName,
                 subtitle: podcastModel.artistName,
@@ -58,7 +58,7 @@ final class MediaContentFactory {
                 url: podcastModel.collectionViewUrl
             )
                         
-            let genres = TextBasedCellViewModel(
+            let genres = TextBasedCellViewModelType(
                 title: L10n.genresTitle,
                 content: genresWithBulletFormat(genres: podcastModel.genres)
             )
@@ -66,7 +66,7 @@ final class MediaContentFactory {
             return [mediaDetailCellViewModel, genres]
             
         case let tvShowModel as TvShowModel:
-            let mediaDetailCellViewModel = MediaDetailCellViewModel(
+            let mediaDetailCellViewModel = MediaDetailCellViewModelType(
                 artworkUrl: tvShowModel.artworkUrl60,
                 title: tvShowModel.collectionName,
                 subtitle: tvShowModel.artistName,
@@ -74,12 +74,12 @@ final class MediaContentFactory {
                 url: tvShowModel.trackViewUrl
             )
             
-            let genre = TextBasedCellViewModel(
+            let genre = TextBasedCellViewModelType(
                 title: L10n.genreTitle,
                 content:  tvShowModel.primaryGenreName
             )
             
-            let description = TextBasedCellViewModel(
+            let description = TextBasedCellViewModelType(
                 title: L10n.descriptionTitle,
                 content: tvShowModel.longDescription
             )
@@ -87,7 +87,7 @@ final class MediaContentFactory {
             return [mediaDetailCellViewModel, genre, description]
             
         case let ebookModel as EbookModel:
-            let mediaDetailCellViewModel = MediaDetailCellViewModel(
+            let mediaDetailCellViewModel = MediaDetailCellViewModelType(
                 artworkUrl: ebookModel.artworkUrl60,
                 title: ebookModel.trackName,
                 subtitle: ebookModel.artistName,
@@ -95,12 +95,12 @@ final class MediaContentFactory {
                 url: ebookModel.trackViewUrl
             )
                         
-            let genres = TextBasedCellViewModel(
+            let genres = TextBasedCellViewModelType(
                 title: L10n.genreTitle,
                 content: genresWithBulletFormat(genres: ebookModel.genres)
             )
             
-            let description = TextBasedCellViewModel(
+            let description = TextBasedCellViewModelType(
                 title: L10n.descriptionTitle,
                 content: ebookModel.description
             )
