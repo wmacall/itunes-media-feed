@@ -19,7 +19,6 @@
 // swiftlint:disable identifier_name line_length nesting type_body_length type_name
 internal enum R {
   internal enum Base {
-    internal static let available = ImageAsset(name: "available")
     internal static let placeholder = ImageAsset(name: "placeholder")
     internal static let results = ImageAsset(name: "results")
   }
@@ -37,6 +36,7 @@ internal enum R {
     internal static let orangeSmooth = ColorAsset(name: "OrangeSmooth")
   }
   internal enum Icons {
+    internal static let available = ImageAsset(name: "available")
   }
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name

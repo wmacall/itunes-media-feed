@@ -68,3 +68,6 @@
 
 ## [ADD] 2019-12-27 22:00
     * Add screenshots for README.md
+
+## [FIX] 2019-12-30 15:30
+    * Fix Icons not uploaded to git, resolved by moving store icon from Base to Icons
