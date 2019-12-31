@@ -5,7 +5,6 @@
 #   Objective-C.gitignore & Swift.gitignore
 
 ## Build generated
-build/
 DerivedData/
 
 ## Various settings

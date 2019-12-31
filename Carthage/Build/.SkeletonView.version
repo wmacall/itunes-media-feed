@@ -1,0 +1,10 @@
+{
+  "commitish" : "1.8.2",
+  "iOS" : [
+    {
+      "name" : "SkeletonView",
+      "hash" : "ba6794468563752a8bf7e98437ef92e29bea1e1e55519faf4a450cf922bc13ab",
+      "swiftToolchainVersion" : "5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)"
+    }
+  ]
+}

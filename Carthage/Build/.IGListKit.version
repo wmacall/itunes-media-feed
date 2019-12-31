@@ -1,0 +1,13 @@
+{
+  "commitish" : "4.0.0",
+  "iOS" : [
+    {
+      "name" : "IGListDiffKit",
+      "hash" : "5264747523ffeef7dc36b425bee03af94202e3b9eb58d3d29d677cce5a675eed"
+    },
+    {
+      "name" : "IGListKit",
+      "hash" : "ccd162b31d02e6e23ad7139374df086e20eb42f0a9344da636175003fd124f5f"
+    }
+  ]
+}

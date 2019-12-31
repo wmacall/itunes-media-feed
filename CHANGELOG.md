@@ -80,3 +80,6 @@
 
 ## [FIX] 2019-12-31 08:30
     * Fix ignoring builds for carthage
+
+## [REMOVE] 2019-12-31 08:38
+    * Remove build from .gitignore
