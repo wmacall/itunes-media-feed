@@ -51,6 +51,8 @@
 		EC2FBF3223B6DA130015AF68 /* SkeletonCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2FBF3123B6DA130015AF68 /* SkeletonCellViewModel.swift */; };
 		EC2FBF3423B6DA5A0015AF68 /* LoadingCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2FBF3323B6DA5A0015AF68 /* LoadingCellViewModel.swift */; };
 		EC2FBF3623B6DB7D0015AF68 /* EmptyStateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2FBF3523B6DB7D0015AF68 /* EmptyStateViewModel.swift */; };
+		EC99D4DD23BB9245005B9697 /* IGListKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC99D4DC23BB9245005B9697 /* IGListKit.framework */; };
+		EC99D4DE23BB9245005B9697 /* IGListKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EC99D4DC23BB9245005B9697 /* IGListKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		ECCCD11923B579BD0047F1F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCCD11823B579BD0047F1F6 /* AppDelegate.swift */; };
 		ECCCD12223B579BF0047F1F6 /* Base.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECCCD12123B579BF0047F1F6 /* Base.xcassets */; };
 		ECCCD12523B579BF0047F1F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECCCD12323B579BF0047F1F6 /* LaunchScreen.storyboard */; };
@@ -151,6 +153,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				ECCCD1CE23B5C1390047F1F6 /* IGListDiffKit.framework in Embed Frameworks */,
+				EC99D4DE23BB9245005B9697 /* IGListKit.framework in Embed Frameworks */,
 				ECCCD19E23B5A5710047F1F6 /* RxCocoa.framework in Embed Frameworks */,
 				ECCCD1D123B5C13E0047F1F6 /* SkeletonView.framework in Embed Frameworks */,
 				ECCCD16223B57FB80047F1F6 /* Swinject.framework in Embed Frameworks */,
@@ -213,6 +216,7 @@
 		EC2FBF3123B6DA130015AF68 /* SkeletonCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonCellViewModel.swift; sourceTree = "<group>"; };
 		EC2FBF3323B6DA5A0015AF68 /* LoadingCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingCellViewModel.swift; sourceTree = "<group>"; };
 		EC2FBF3523B6DB7D0015AF68 /* EmptyStateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateViewModel.swift; sourceTree = "<group>"; };
+		EC99D4DC23BB9245005B9697 /* IGListKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IGListKit.framework; path = Carthage/Build/iOS/IGListKit.framework; sourceTree = "<group>"; };
 		ECCCD11523B579BD0047F1F6 /* Itunes Media.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Itunes Media.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECCCD11823B579BD0047F1F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECCCD12123B579BF0047F1F6 /* Base.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Base.xcassets; sourceTree = "<group>"; };
@@ -295,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECCCD1CD23B5C1390047F1F6 /* IGListDiffKit.framework in Frameworks */,
+				EC99D4DD23BB9245005B9697 /* IGListKit.framework in Frameworks */,
 				ECCCD19D23B5A5710047F1F6 /* RxCocoa.framework in Frameworks */,
 				ECCCD1D023B5C13E0047F1F6 /* SkeletonView.framework in Frameworks */,
 				ECCCD16123B57FB80047F1F6 /* Swinject.framework in Frameworks */,
@@ -690,6 +695,7 @@
 		ECCCD15F23B57FB80047F1F6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EC99D4DC23BB9245005B9697 /* IGListKit.framework */,
 				ECCCD1CF23B5C13E0047F1F6 /* SkeletonView.framework */,
 				ECCCD1CC23B5C1390047F1F6 /* IGListDiffKit.framework */,
 				ECCCD1C423B5BC8D0047F1F6 /* Reusable.framework */,

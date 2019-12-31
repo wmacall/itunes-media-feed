@@ -74,3 +74,6 @@
 
 ## [FIX] 2019-12-31 08:24
     * Fix remove action dependencies for .gitignore
+
+## [FIX] 2019-12-31 08:27
+    * Fix missing IGListkit framework inside emebeded libraries
