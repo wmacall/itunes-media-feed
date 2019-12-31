@@ -71,3 +71,6 @@
 
 ## [FIX] 2019-12-30 15:30
     * Fix Icons not uploaded to git, resolved by moving store icon from Base to Icons
+
+## [FIX] 2019-12-31 08:24
+    * Fix remove action dependencies for .gitignore
