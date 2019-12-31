@@ -77,3 +77,6 @@
 
 ## [FIX] 2019-12-31 08:27
     * Fix missing IGListkit framework inside emebeded libraries
+
+## [FIX] 2019-12-31 08:30
+    * Fix ignoring builds for carthage
